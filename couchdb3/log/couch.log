@@ -1,0 +1,1011 @@
+[Wed, 30 Mar 2011 09:14:29 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://127.0.0.1:5003/
+
+[Wed, 30 Mar 2011 09:15:18 GMT] [info] [<0.106.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 09:15:23 GMT] [info] [<0.158.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 09:17:20 GMT] [info] [<0.164.0>] 127.0.0.1 - - 'PUT' /reg_node 201
+
+[Wed, 30 Mar 2011 09:51:21 GMT] [info] [<0.2331.0>] Replication records differ. Scanning histories to find a common ancestor.
+
+[Wed, 30 Mar 2011 09:51:21 GMT] [info] [<0.2331.0>] no common ancestry -- performing full replication
+
+[Wed, 30 Mar 2011 09:51:21 GMT] [info] [<0.282.0>] starting new replication "54413037a7c66b9b1f1a6b3fb741453d+continuous" at <0.2331.0>
+
+[Wed, 30 Mar 2011 09:51:21 GMT] [info] [<0.282.0>] 127.0.0.1 - - 'POST' /_replicate 202
+
+[Wed, 30 Mar 2011 09:51:26 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 1
+
+[Wed, 30 Mar 2011 09:52:32 GMT] [info] [<0.2330.0>] 127.0.0.1 - - 'HEAD' /reg_node/ 200
+
+[Wed, 30 Mar 2011 09:52:32 GMT] [info] [<0.2424.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 30 Mar 2011 09:52:32 GMT] [info] [<0.2425.0>] 127.0.0.1 - - 'GET' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 404
+
+[Wed, 30 Mar 2011 09:52:32 GMT] [info] [<0.2426.0>] 127.0.0.1 - - 'GET' /reg_node/_changes?style=all_docs&heartbeat=10000&since=0&feed=continuous 200
+
+[Wed, 30 Mar 2011 09:52:37 GMT] [info] [<0.2427.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=1 201
+
+[Wed, 30 Mar 2011 09:52:37 GMT] [info] [<0.2435.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 10:04:55 GMT] [info] [<0.2436.0>] 127.0.0.1 - - 'PUT' /reg_node/first_doc_created_at_node3 201
+
+[Wed, 30 Mar 2011 10:04:55 GMT] [info] [<0.3175.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node3?open_revs=["1-bba1f1a0720677a4d39241ba263e0508"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 10:05:00 GMT] [info] [<0.3176.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=2 201
+
+[Wed, 30 Mar 2011 10:05:00 GMT] [info] [<0.3184.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 10:05:00 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 2
+
+[Wed, 30 Mar 2011 10:06:17 GMT] [info] [<0.3185.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node2?open_revs=["1-f9568181fb176123bc17916787433c1d"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 10:06:22 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 3
+
+[Wed, 30 Mar 2011 10:06:22 GMT] [info] [<0.3268.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=3 201
+
+[Wed, 30 Mar 2011 10:06:22 GMT] [info] [<0.3278.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 10:06:55 GMT] [info] [<0.3279.0>] 127.0.0.1 - - 'GET' /reg_node/second_doc_created_at_node2?open_revs=["1-3e923294d50112fdc024b43c0550e451"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 10:07:00 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 4
+
+[Wed, 30 Mar 2011 10:07:00 GMT] [info] [<0.3315.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=4 201
+
+[Wed, 30 Mar 2011 10:07:00 GMT] [info] [<0.3325.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 10:08:20 GMT] [info] [<0.3326.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_global_node1?open_revs=["1-75d9f53d6b7598c79c1a1571cfce28d6"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 10:08:25 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 5
+
+[Wed, 30 Mar 2011 10:08:25 GMT] [info] [<0.3410.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=5 201
+
+[Wed, 30 Mar 2011 10:08:25 GMT] [info] [<0.3420.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 10:10:15 GMT] [info] [<0.3421.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node2?open_revs=["2-e8b6036b1575ea9342690f6eeb10125a"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 10:10:20 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 6
+
+[Wed, 30 Mar 2011 10:10:20 GMT] [info] [<0.3534.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=6 201
+
+[Wed, 30 Mar 2011 10:10:20 GMT] [info] [<0.3544.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 11:36:32 GMT] [info] [<0.3545.0>] 127.0.0.1 - - 'GET' /reg_node/second_doc_created_at_global_node1?open_revs=["1-03c27af87437af5376000d9b95b54558"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 11:36:37 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 7
+
+[Wed, 30 Mar 2011 11:36:37 GMT] [info] [<0.8719.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=7 201
+
+[Wed, 30 Mar 2011 11:36:37 GMT] [info] [<0.8729.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 11:36:46 GMT] [info] [<0.8730.0>] 127.0.0.1 - - 'GET' /reg_node/_changes 200
+
+[Wed, 30 Mar 2011 11:42:08 GMT] [info] [<0.8740.0>] 127.0.0.1 - - 'GET' /reg_node/_changes?since=4 200
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9068.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9068.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9116.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [info] [<0.9117.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [info] [<0.9113.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [info] [<0.9117.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:51 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9117.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9068.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9116.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [info] [<0.9113.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [info] [<0.9117.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [info] [<0.9113.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [info] [<0.9118.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 30 Mar 2011 11:42:53 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9113.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [info] [<0.9113.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node3?revs_info=true 200
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9118.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [info] [<0.9118.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 11:43:14 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:24 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:24 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'PUT' /reg_node/first_doc_created_at_node3 201
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [info] [<0.9119.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node3?open_revs=["2-efd8c7452a6b51a8db234237bca39db4"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node3?revs_info=true 200
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [error] [<0.9178.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [error] [<0.9115.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [info] [<0.9178.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 11:43:48 GMT] [info] [<0.9115.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 11:43:53 GMT] [info] [<0.9181.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=8 201
+
+[Wed, 30 Mar 2011 11:43:53 GMT] [info] [<0.9187.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 11:43:53 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 8
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [error] [<0.9188.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [info] [<0.9188.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [error] [<0.9188.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [info] [<0.9188.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [error] [<0.9188.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [info] [<0.9188.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [error] [<0.9188.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [error] [<0.9822.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [info] [<0.9188.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [info] [<0.9822.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [error] [<0.9822.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:12 GMT] [info] [<0.9822.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [error] [<0.9822.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [info] [<0.9822.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [error] [<0.9822.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [error] [<0.9188.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [error] [<0.9823.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [info] [<0.9822.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [error] [<0.9826.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [info] [<0.9188.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [info] [<0.9823.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 30 Mar 2011 11:54:14 GMT] [info] [<0.9826.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [error] [<0.9826.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [info] [<0.9826.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [error] [<0.9826.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [error] [<0.9823.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [info] [<0.9823.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [info] [<0.9826.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 304
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [error] [<0.9826.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [error] [<0.9823.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [error] [<0.9188.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [info] [<0.9826.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [info] [<0.9823.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 11:54:16 GMT] [info] [<0.9188.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 30 Mar 2011 11:54:52 GMT] [info] [<0.9827.0>] 127.0.0.1 - - 'GET' /reg_node/doc1?open_revs=["2-bb411874ad194c81f3d41e8d09484439"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 11:54:57 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 9
+
+[Wed, 30 Mar 2011 11:54:57 GMT] [info] [<0.9868.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=9 201
+
+[Wed, 30 Mar 2011 11:54:57 GMT] [info] [<0.9878.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 12:02:33 GMT] [info] [<0.9879.0>] 127.0.0.1 - - 'GET' /reg_node/doc1?open_revs=["3-b115ae5b470bf0cd7364bd717b75045d"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 12:02:38 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 10
+
+[Wed, 30 Mar 2011 12:02:38 GMT] [info] [<0.10347.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=10 201
+
+[Wed, 30 Mar 2011 12:02:38 GMT] [info] [<0.10357.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 12:04:05 GMT] [info] [<0.10358.0>] 127.0.0.1 - - 'GET' /reg_node/third_doc_nod2?open_revs=["1-ffddcff7a40394dcdb1b116706483b77"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 12:04:10 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 11
+
+[Wed, 30 Mar 2011 12:04:10 GMT] [info] [<0.10449.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=11 201
+
+[Wed, 30 Mar 2011 12:04:10 GMT] [info] [<0.10459.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 12:11:04 GMT] [info] [<0.10460.0>] 127.0.0.1 - - 'GET' /reg_node/some_doc_at_node2?open_revs=["1-967a00dff5e02add41819138abb3284d"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 12:11:09 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 12
+
+[Wed, 30 Mar 2011 12:11:09 GMT] [info] [<0.10884.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=12 201
+
+[Wed, 30 Mar 2011 12:11:09 GMT] [info] [<0.10894.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 12:11:25 GMT] [info] [<0.10895.0>] 127.0.0.1 - - 'GET' /reg_node/some_doc_at_node2?open_revs=["2-faa089f72b344b8ca4306a2f5d0a1de0"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 12:11:30 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 13
+
+[Wed, 30 Mar 2011 12:11:30 GMT] [info] [<0.10914.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=13 201
+
+[Wed, 30 Mar 2011 12:11:30 GMT] [info] [<0.10925.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 13:01:02 GMT] [error] [<0.10926.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 13:01:02 GMT] [info] [<0.10926.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node3?revs_info=true 200
+
+[Wed, 30 Mar 2011 13:01:02 GMT] [error] [<0.10926.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 13:01:02 GMT] [error] [<0.13947.0>] cookie auth secret is not set
+
+[Wed, 30 Mar 2011 13:01:02 GMT] [info] [<0.10926.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 30 Mar 2011 13:01:02 GMT] [info] [<0.13947.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 30 Mar 2011 13:05:55 GMT] [info] [<0.13948.0>] 127.0.0.1 - - 'GET' /reg_node/some_doc_at_node2?open_revs=["3-919877a6bfd8b915cfee8f4a7d9515e3"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 30 Mar 2011 13:06:00 GMT] [info] [<0.2331.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 14
+
+[Wed, 30 Mar 2011 13:06:00 GMT] [info] [<0.14249.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=14 201
+
+[Wed, 30 Mar 2011 13:06:00 GMT] [info] [<0.14259.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2339.0>] changes loop timeout, no data received from http://127.0.0.1:5001/global_node/
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2339.0>] ** Generic server <0.2339.0> terminating 
+** Last message in was changes_timeout
+** When Server state == {state,nil,nil,
+                            [<0.2331.0>,
+                             {http_db,"http://127.0.0.1:5001/global_node/",
+                                 [],"_changes",
+                                 [{"User-Agent","CouchDB/1.0.2"},
+                                  {"Accept","application/json"}],
+                                 [{"style",all_docs},
+                                  {"heartbeat",10000},
+                                  {"since",0},
+                                  {"feed",continuous}],
+                                 get,nil,
+                                 [{stream_to,{<0.2339.0>,once}},
+                                  {response_format,binary}],
+                                 10,500,<0.2340.0>},
+                             0,
+                             [{<<"source">>,
+                               <<"http://127.0.0.1:5001/global_node">>},
+                              {<<"target">>,<<"reg_node">>},
+                              {<<"continuous">>,true}]],
+                            1,<0.2340.0>,
+                            {1301,478681,435054},
+                            false,0,<<>>,
+                            {<0.2342.0>,#Ref<0.0.0.61395>},
+                            {[],[]}}
+** Reason for termination == 
+** changes_timeout
+
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2339.0>] {error_report,<0.30.0>,
+    {<0.2339.0>,crash_report,
+     [[{initial_call,{couch_rep_changes_feed,init,['Argument__1']}},
+       {pid,<0.2339.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,changes_timeout,
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [<0.2331.0>,couch_rep_sup,couch_primary_services,couch_server_sup,
+            <0.31.0>]},
+       {messages,
+           [{ibrowse_async_response,{1301,478681,435054},<<"\n">>},
+            {ibrowse_async_response,
+                {1301,478681,435054},
+                {error,closing_on_request}}]},
+       {links,[<0.2331.0>]},
+       {dictionary,[{timeout,{1301496747036905,#Ref<0.0.0.88952>}}]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,987},
+       {stack_size,24},
+       {reductions,143131}],
+      []]}}
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2341.0>] ** Generic server <0.2341.0> terminating 
+** Last message in was {'EXIT',<0.2342.0>,
+                           {changes_timeout,
+                               {gen_server,call,
+                                   [<0.2339.0>,next_changes,infinity]}}}
+** When Server state == {state,nil,nil,<0.2331.0>,false,0,
+                               {<0.2344.0>,#Ref<0.0.0.61399>},
+                               {[],[]},
+                               14,14,14}
+** Reason for termination == 
+** {changes_timeout,{gen_server,call,[<0.2339.0>,next_changes,infinity]}}
+
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2341.0>] {error_report,<0.30.0>,
+    {<0.2341.0>,crash_report,
+     [[{initial_call,{couch_rep_missing_revs,init,['Argument__1']}},
+       {pid,<0.2341.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {changes_timeout,
+                   {gen_server,call,[<0.2339.0>,next_changes,infinity]}},
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [<0.2331.0>,couch_rep_sup,couch_primary_services,couch_server_sup,
+            <0.31.0>]},
+       {messages,[]},
+       {links,[<0.2331.0>]},
+       {dictionary,[]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,610},
+       {stack_size,24},
+       {reductions,523}],
+      []]}}
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2331.0>] ** Generic server <0.2331.0> terminating 
+** Last message in was {'EXIT',<0.2339.0>,changes_timeout}
+** When Server state == {state,<0.2339.0>,<0.2341.0>,<0.2343.0>,<0.2345.0>,
+                            {http_db,"http://127.0.0.1:5001/global_node/",[],
+                                [],
+                                [{"User-Agent","CouchDB/1.0.2"},
+                                 {"Accept","application/json"},
+                                 {"Accept-Encoding","gzip"}],
+                                [],get,nil,
+                                [{response_format,binary},
+                                 {inactivity_timeout,30000}],
+                                10,500,nil},
+                            {db,<0.286.0>,<0.287.0>,nil,
+                                <<"1301476640925920">>,<0.284.0>,<0.288.0>,
+                                {db_header,5,0,0,nil,nil,nil,0,nil,nil,1000},
+                                0,
+                                {btree,<0.284.0>,nil,
+                                    #Fun<couch_db_updater.7.10053969>,
+                                    #Fun<couch_db_updater.8.35220795>,
+                                    #Fun<couch_btree.5.124754102>,
+                                    #Fun<couch_db_updater.9.107593676>},
+                                {btree,<0.284.0>,nil,
+                                    #Fun<couch_db_updater.10.30996817>,
+                                    #Fun<couch_db_updater.11.96515267>,
+                                    #Fun<couch_btree.5.124754102>,
+                                    #Fun<couch_db_updater.12.117826253>},
+                                {btree,<0.284.0>,nil,
+                                    #Fun<couch_btree.0.83553141>,
+                                    #Fun<couch_btree.1.30790806>,
+                                    #Fun<couch_btree.2.124754102>,nil},
+                                0,<<"reg_node">>,
+                                "/Users/simonunge/Programming/couchdb/couchdb3/data/reg_node.couch",
+                                [],[],nil,
+                                {user_ctx,null,
+                                    [<<"_admin">>],
+                                    <<"{couch_httpd_auth, default_authentication_handler}">>},
+                                nil,1000,
+                                [before_header,after_header,on_file_open],
+                                false},
+                            true,false,
+                            ["54413037a7c66b9b1f1a6b3fb741453d",
+                             {[{<<"source">>,
+                                <<"http://127.0.0.1:5001/global_node">>},
+                               {<<"target">>,<<"reg_node">>},
+                               {<<"continuous">>,true}]},
+                             {user_ctx,null,
+                                 [<<"_admin">>],
+                                 <<"{couch_httpd_auth, default_authentication_handler}">>}],
+                            nil,0,[],<<"afb1075ca5db2cc3760bfb9388e9126c">>,
+                            {doc,
+                                <<"_local/54413037a7c66b9b1f1a6b3fb741453d">>,
+                                {0,[<<"15">>]},
+                                {[{<<"session_id">>,
+                                   <<"01757f499fb4dc418e872cbda545221a">>},
+                                  {<<"source_last_seq">>,1},
+                                  {<<"history">>,
+                                   [{[{<<"session_id">>,
+                                       <<"01757f499fb4dc418e872cbda545221a">>},
+                                      {<<"start_time">>,
+                                       <<"Wed, 30 Mar 2011 09:50:52 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Wed, 30 Mar 2011 09:50:57 GMT">>},
+                                      {<<"start_last_seq">>,0},
+                                      {<<"end_last_seq">>,1},
+                                      {<<"recorded_seq">>,1},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,1},
+                                      {<<"docs_read">>,1},
+                                      {<<"docs_written">>,1},
+                                      {<<"doc_write_failures">>,0}]}]}]},
+                                [],false,[]},
+                            {doc,
+                                <<"_local/54413037a7c66b9b1f1a6b3fb741453d">>,
+                                {0,[<<"14">>]},
+                                {[]},
+                                [],false,[]},
+                            "Wed, 30 Mar 2011 09:51:21 GMT",
+                            <<"1301476566057548">>,<<"1301476640925920">>,
+                            {[{<<"session_id">>,
+                               <<"afb1075ca5db2cc3760bfb9388e9126c">>},
+                              {<<"source_last_seq">>,14},
+                              {<<"history">>,
+                               [{[{<<"session_id">>,
+                                   <<"afb1075ca5db2cc3760bfb9388e9126c">>},
+                                  {<<"start_time">>,
+                                   <<"Wed, 30 Mar 2011 09:51:21 GMT">>},
+                                  {<<"end_time">>,
+                                   <<"Wed, 30 Mar 2011 13:06:00 GMT">>},
+                                  {<<"start_last_seq">>,0},
+                                  {<<"end_last_seq">>,14},
+                                  {<<"recorded_seq">>,14},
+                                  {<<"missing_checked">>,0},
+                                  {<<"missing_found">>,14},
+                                  {<<"docs_read">>,14},
+                                  {<<"docs_written">>,14},
+                                  {<<"doc_write_failures">>,0}]}]}]},
+                            [],false,14,49202,nil,nil,<0.2346.0>}
+** Reason for termination == 
+** changes_timeout
+
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2331.0>] {error_report,<0.30.0>,
+    {<0.2331.0>,crash_report,
+     [[{initial_call,{couch_rep,init,['Argument__1']}},
+       {pid,<0.2331.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,changes_timeout,
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [couch_rep_sup,couch_primary_services,couch_server_sup,<0.31.0>]},
+       {messages,
+           [{'EXIT',<0.2341.0>,
+                {changes_timeout,
+                    {gen_server,call,[<0.2339.0>,next_changes,infinity]}}}]},
+       {links,[<0.2343.0>,<0.2346.0>,<0.2345.0>,<0.81.0>]},
+       {dictionary,[{task_status_update,{{1301,490355,407739},0}}]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,2584},
+       {stack_size,24},
+       {reductions,28665}],
+      [{neighbour,
+           [{pid,<0.2345.0>},
+            {registered_name,[]},
+            {initial_call,{erlang,apply,2}},
+            {current_function,{gen,do_call,4}},
+            {ancestors,[]},
+            {messages,[]},
+            {links,[<0.2331.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,waiting},
+            {heap_size,1597},
+            {stack_size,20},
+            {reductions,1313}]},
+       {neighbour,
+           [{pid,<0.2346.0>},
+            {registered_name,[]},
+            {initial_call,{couch_event_sup,init,['Argument__1']}},
+            {current_function,{gen_server,loop,6}},
+            {ancestors,
+                [<0.2331.0>,couch_rep_sup,couch_primary_services,
+                 couch_server_sup,<0.31.0>]},
+            {messages,[]},
+            {links,[<0.2331.0>,<0.84.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,waiting},
+            {heap_size,233},
+            {stack_size,9},
+            {reductions,32}]}]]}}
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2343.0>] ** Generic server <0.2343.0> terminating 
+** Last message in was {'EXIT',<0.2331.0>,changes_timeout}
+** When Server state == {state,<0.2331.0>,
+                            {http_db,"http://127.0.0.1:5001/global_node/",[],
+                                [],
+                                [{"User-Agent","CouchDB/1.0.2"},
+                                 {"Accept","application/json"},
+                                 {"Accept-Encoding","gzip"}],
+                                [],get,nil,
+                                [{response_format,binary},
+                                 {inactivity_timeout,30000}],
+                                10,500,nil},
+                            <0.2341.0>,<0.2344.0>,[],0,
+                            {[],[]},
+                            {<0.2345.0>,#Ref<0.0.0.61419>},
+                            false,0,nil,[],
+                            [14]}
+** Reason for termination == 
+** changes_timeout
+
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.81.0>] {error_report,<0.30.0>,
+              {<0.81.0>,supervisor_report,
+               [{supervisor,{local,couch_rep_sup}},
+                {errorContext,child_terminated},
+                {reason,changes_timeout},
+                {offender,[{pid,<0.2331.0>},
+                           {name,"54413037a7c66b9b1f1a6b3fb741453d+continuous"},
+                           {mfargs,{gen_server,start_link,undefined}},
+                           {restart_type,temporary},
+                           {shutdown,1},
+                           {child_type,worker}]}]}}
+
+[Wed, 30 Mar 2011 16:01:59 GMT] [error] [<0.2343.0>] {error_report,<0.30.0>,
+              {<0.2343.0>,crash_report,
+               [[{initial_call,{couch_rep_reader,init,['Argument__1']}},
+                 {pid,<0.2343.0>},
+                 {registered_name,[]},
+                 {error_info,{exit,changes_timeout,
+                                   [{gen_server,terminate,6},
+                                    {proc_lib,init_p_do_apply,3}]}},
+                 {ancestors,[<0.2331.0>,couch_rep_sup,couch_primary_services,
+                             couch_server_sup,<0.31.0>]},
+                 {messages,[]},
+                 {links,[<0.2344.0>]},
+                 {dictionary,[]},
+                 {trap_exit,true},
+                 {status,running},
+                 {heap_size,1597},
+                 {stack_size,24},
+                 {reductions,984}],
+                []]}}
+
+[Thu, 31 Mar 2011 08:09:39 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://127.0.0.1:5003/
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [error] [<0.305.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [error] [<0.306.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [error] [<0.103.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [error] [<0.307.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [error] [<0.313.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [info] [<0.307.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [info] [<0.306.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [info] [<0.313.0>] 127.0.0.1 - - 'GET' / 200
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [info] [<0.305.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [info] [<0.103.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [error] [<0.306.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:12:59 GMT] [info] [<0.306.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Thu, 31 Mar 2011 08:32:12 GMT] [info] [<0.314.0>] 127.0.0.1 - - 'HEAD' /reg_node/ 200
+
+[Thu, 31 Mar 2011 08:32:12 GMT] [info] [<0.1471.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Thu, 31 Mar 2011 08:32:12 GMT] [info] [<0.1472.0>] 127.0.0.1 - - 'GET' /reg_node/_local%2Fb3086c65c5f323cf61f1cb39aeb08515 404
+
+[Thu, 31 Mar 2011 08:32:12 GMT] [info] [<0.1473.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Thu, 31 Mar 2011 08:32:12 GMT] [info] [<0.1474.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Thu, 31 Mar 2011 08:32:17 GMT] [info] [<0.1475.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Thu, 31 Mar 2011 08:32:17 GMT] [info] [<0.1481.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2Fb3086c65c5f323cf61f1cb39aeb08515 201
+
+[Thu, 31 Mar 2011 08:33:30 GMT] [info] [<0.1482.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Thu, 31 Mar 2011 08:33:30 GMT] [info] [<0.1555.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Thu, 31 Mar 2011 08:33:35 GMT] [info] [<0.1556.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Thu, 31 Mar 2011 08:33:35 GMT] [info] [<0.1562.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2Fb3086c65c5f323cf61f1cb39aeb08515 201
+
+[Thu, 31 Mar 2011 08:33:36 GMT] [error] [<0.1563.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:33:36 GMT] [error] [<0.1563.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:33:36 GMT] [info] [<0.1563.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Thu, 31 Mar 2011 08:33:36 GMT] [error] [<0.1563.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:33:36 GMT] [error] [<0.1566.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:33:36 GMT] [info] [<0.1563.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Thu, 31 Mar 2011 08:33:36 GMT] [info] [<0.1566.0>] 127.0.0.1 - - 'GET' / 200
+
+[Thu, 31 Mar 2011 08:34:01 GMT] [error] [<0.1566.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:01 GMT] [info] [<0.1592.0>] Replication records differ. Scanning histories to find a common ancestor.
+
+[Thu, 31 Mar 2011 08:34:01 GMT] [info] [<0.1592.0>] no common ancestry -- performing full replication
+
+[Thu, 31 Mar 2011 08:34:01 GMT] [info] [<0.1566.0>] starting new replication "1e4c094de5a55bc37b3a90f2ed6ed7ef+continuous" at <0.1592.0>
+
+[Thu, 31 Mar 2011 08:34:01 GMT] [info] [<0.1566.0>] 127.0.0.1 - - 'POST' /_replicate 202
+
+[Thu, 31 Mar 2011 08:34:06 GMT] [info] [<0.1592.0>] recording a checkpoint for reg_node -> http://localhost:5001/global_node/ at source update_seq 15
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [error] [<0.1566.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [info] [<0.1566.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [error] [<0.1566.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [error] [<0.1567.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [info] [<0.1566.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [info] [<0.1567.0>] 127.0.0.1 - - 'GET' / 200
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [error] [<0.1566.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [error] [<0.1567.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [info] [<0.1566.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Thu, 31 Mar 2011 08:34:16 GMT] [info] [<0.1567.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Thu, 31 Mar 2011 08:34:18 GMT] [error] [<0.1567.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:18 GMT] [info] [<0.1567.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Thu, 31 Mar 2011 08:34:18 GMT] [error] [<0.1567.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:18 GMT] [error] [<0.1566.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:18 GMT] [info] [<0.1566.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Thu, 31 Mar 2011 08:34:18 GMT] [info] [<0.1567.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Thu, 31 Mar 2011 08:34:19 GMT] [error] [<0.1567.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:19 GMT] [error] [<0.1566.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:19 GMT] [error] [<0.1629.0>] cookie auth secret is not set
+
+[Thu, 31 Mar 2011 08:34:19 GMT] [info] [<0.1567.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Thu, 31 Mar 2011 08:34:19 GMT] [info] [<0.1566.0>] 127.0.0.1 - - 'GET' / 200
+
+[Thu, 31 Mar 2011 08:34:19 GMT] [info] [<0.1629.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Thu, 31 Mar 2011 08:45:35 GMT] [info] [<0.1630.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Thu, 31 Mar 2011 08:45:35 GMT] [info] [<0.2310.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Thu, 31 Mar 2011 08:45:40 GMT] [info] [<0.2311.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Thu, 31 Mar 2011 08:45:40 GMT] [info] [<0.2318.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2Fb3086c65c5f323cf61f1cb39aeb08515 201
+
+[Thu, 31 Mar 2011 08:45:40 GMT] [info] [<0.1592.0>] recording a checkpoint for reg_node -> http://localhost:5001/global_node/ at source update_seq 16
+
+[Fri, 01 Apr 2011 09:25:43 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://127.0.0.1:5003/
+
+[Mon, 04 Apr 2011 07:53:10 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://127.0.0.1:5003/
+
+[Mon, 04 Apr 2011 08:11:02 GMT] [info] [<0.103.0>] 127.0.0.1 - - 'GET' /_utils 301
+
+[Mon, 04 Apr 2011 08:11:02 GMT] [info] [<0.1177.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Mon, 04 Apr 2011 08:11:02 GMT] [info] [<0.1177.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 08:11:02 GMT] [info] [<0.1177.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 08:11:02 GMT] [info] [<0.1182.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Mon, 04 Apr 2011 08:11:02 GMT] [info] [<0.1180.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Mon, 04 Apr 2011 14:02:49 GMT] [info] [<0.1184.0>] 127.0.0.1 - - 'HEAD' /reg_node/ 200
+
+[Mon, 04 Apr 2011 14:02:49 GMT] [info] [<0.22523.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Mon, 04 Apr 2011 14:02:49 GMT] [info] [<0.22524.0>] 127.0.0.1 - - 'GET' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 404
+
+[Mon, 04 Apr 2011 14:02:49 GMT] [info] [<0.22525.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:02:49 GMT] [info] [<0.22526.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:02:49 GMT] [info] [<0.22527.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:02:49 GMT] [info] [<0.22528.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:02:54 GMT] [info] [<0.22529.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:02:54 GMT] [info] [<0.22535.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Mon, 04 Apr 2011 14:03:16 GMT] [info] [<0.22536.0>] 127.0.0.1 - - 'HEAD' /reg_node/ 200
+
+[Mon, 04 Apr 2011 14:03:16 GMT] [info] [<0.22560.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Mon, 04 Apr 2011 14:03:16 GMT] [info] [<0.22561.0>] 127.0.0.1 - - 'GET' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 200
+
+[Mon, 04 Apr 2011 14:03:16 GMT] [info] [<0.22562.0>] 127.0.0.1 - - 'GET' /reg_node/_changes?style=all_docs&heartbeat=10000&since=14&feed=continuous 200
+
+[Mon, 04 Apr 2011 14:03:21 GMT] [info] [<0.22563.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=26 201
+
+[Mon, 04 Apr 2011 14:03:21 GMT] [info] [<0.22571.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:04:12 GMT] [info] [<0.22572.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Mon, 04 Apr 2011 14:04:12 GMT] [info] [<0.22572.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:04:12 GMT] [info] [<0.22624.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:04:12 GMT] [info] [<0.22627.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Mon, 04 Apr 2011 14:04:12 GMT] [info] [<0.22626.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Mon, 04 Apr 2011 14:04:13 GMT] [info] [<0.22624.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Mon, 04 Apr 2011 14:04:13 GMT] [info] [<0.22627.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Mon, 04 Apr 2011 14:04:13 GMT] [info] [<0.22626.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Mon, 04 Apr 2011 14:04:13 GMT] [info] [<0.22630.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:04:13 GMT] [info] [<0.22631.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:04:13 GMT] [info] [<0.22627.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Mon, 04 Apr 2011 14:04:39 GMT] [info] [<0.22633.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:04:39 GMT] [info] [<0.22660.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:04:39 GMT] [info] [<0.22661.0>] 127.0.0.1 - - 'GET' /reg_node/nuhem?open_revs=["2-7051cbe5c8faecd085a3fa619e6e6337"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:04:44 GMT] [info] [<0.22662.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:04:44 GMT] [info] [<0.22668.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Mon, 04 Apr 2011 14:04:44 GMT] [info] [<0.22669.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=27 201
+
+[Mon, 04 Apr 2011 14:04:44 GMT] [info] [<0.22670.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:10:45 GMT] [info] [<0.22671.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:10:45 GMT] [info] [<0.23039.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:10:45 GMT] [info] [<0.23040.0>] 127.0.0.1 - - 'GET' /reg_node/nuhem?open_revs=["3-da0ceb5b0d984febcbe424301bd862ea"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:10:50 GMT] [info] [<0.23041.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:10:50 GMT] [info] [<0.23047.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:10:50 GMT] [info] [<0.23048.0>] 127.0.0.1 - - 'GET' /reg_node/nuhem?open_revs=["4-cc1a91c6638701c5e48b158088e11747"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:10:50 GMT] [info] [<0.23049.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:10:50 GMT] [info] [<0.23050.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=29 201
+
+[Mon, 04 Apr 2011 14:10:50 GMT] [info] [<0.23051.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:10:50 GMT] [info] [<0.23052.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Mon, 04 Apr 2011 14:11:14 GMT] [info] [<0.23053.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:11:14 GMT] [info] [<0.23078.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:11:14 GMT] [info] [<0.23079.0>] 127.0.0.1 - - 'GET' /reg_node/nuhem?open_revs=["5-489a7046ee9431ecf9881b79e4ef9c43"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:11:19 GMT] [info] [<0.23080.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:11:19 GMT] [info] [<0.23086.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Mon, 04 Apr 2011 14:11:19 GMT] [info] [<0.23087.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=30 201
+
+[Mon, 04 Apr 2011 14:11:19 GMT] [info] [<0.23088.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:11:56 GMT] [info] [<0.23089.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:11:56 GMT] [info] [<0.23128.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:11:56 GMT] [info] [<0.23129.0>] 127.0.0.1 - - 'GET' /reg_node/nuhem?open_revs=["6-c4e83921c1b610bdaac0bcbedaeb47c0"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:12:01 GMT] [info] [<0.23130.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:12:02 GMT] [info] [<0.23137.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=31 201
+
+[Mon, 04 Apr 2011 14:12:02 GMT] [info] [<0.23136.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Mon, 04 Apr 2011 14:12:02 GMT] [info] [<0.23138.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:18:16 GMT] [info] [<0.23139.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:18:16 GMT] [info] [<0.23522.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Mon, 04 Apr 2011 14:18:16 GMT] [info] [<0.23523.0>] 127.0.0.1 - - 'GET' /reg_node/second_doc_created_at_global_node1?open_revs=["3-2c80a247c8cd46bad3273f9043ab2568"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:18:21 GMT] [info] [<0.23524.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:18:21 GMT] [info] [<0.23531.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=32 201
+
+[Mon, 04 Apr 2011 14:18:21 GMT] [info] [<0.23530.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Mon, 04 Apr 2011 14:18:21 GMT] [info] [<0.23532.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:18:33 GMT] [info] [<0.23546.0>] 127.0.0.1 - - 'GET' /reg_node/ruuuuuby?revs_info=true 200
+
+[Mon, 04 Apr 2011 14:18:33 GMT] [info] [<0.23545.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:18:33 GMT] [info] [<0.23533.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:18:48 GMT] [info] [<0.23533.0>] 127.0.0.1 - - 'PUT' /reg_node/ruuuuuby 201
+
+[Mon, 04 Apr 2011 14:18:48 GMT] [info] [<0.23547.0>] 127.0.0.1 - - 'GET' /reg_node/ruuuuuby?open_revs=["2-c1b1fa515dff45e50e08c515256238aa"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:18:48 GMT] [info] [<0.23564.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:18:49 GMT] [info] [<0.23533.0>] 127.0.0.1 - - 'GET' /reg_node/ruuuuuby?revs_info=true 200
+
+[Mon, 04 Apr 2011 14:18:49 GMT] [info] [<0.23533.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:18:49 GMT] [info] [<0.23545.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:18:53 GMT] [info] [<0.23565.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=33 201
+
+[Mon, 04 Apr 2011 14:18:53 GMT] [info] [<0.23571.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:18:54 GMT] [info] [<0.23572.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:18:54 GMT] [info] [<0.23573.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Mon, 04 Apr 2011 14:23:19 GMT] [info] [<0.23574.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Mon, 04 Apr 2011 14:23:20 GMT] [info] [<0.23574.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:23:20 GMT] [info] [<0.23846.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:23:20 GMT] [info] [<0.23846.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Mon, 04 Apr 2011 14:23:20 GMT] [info] [<0.23574.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Mon, 04 Apr 2011 14:32:26 GMT] [info] [<0.23847.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Mon, 04 Apr 2011 14:32:26 GMT] [info] [<0.24403.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Mon, 04 Apr 2011 14:32:26 GMT] [info] [<0.23847.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Mon, 04 Apr 2011 14:32:26 GMT] [info] [<0.24403.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:32:26 GMT] [info] [<0.24403.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:32:26 GMT] [info] [<0.23847.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Mon, 04 Apr 2011 14:32:31 GMT] [info] [<0.23847.0>] 127.0.0.1 - - 'GET' /_uuids?count=1 200
+
+[Mon, 04 Apr 2011 14:32:31 GMT] [info] [<0.23847.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:32:31 GMT] [info] [<0.24403.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:32:58 GMT] [info] [<0.24403.0>] 127.0.0.1 - - 'PUT' /reg_node/best%20day 201
+
+[Mon, 04 Apr 2011 14:32:58 GMT] [info] [<0.24404.0>] 127.0.0.1 - - 'GET' /reg_node/best%20day?open_revs=["1-985b31490779e4061a45194eb111446a"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 04 Apr 2011 14:32:58 GMT] [info] [<0.24438.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Mon, 04 Apr 2011 14:32:58 GMT] [info] [<0.24403.0>] 127.0.0.1 - - 'GET' /reg_node/best%20day?revs_info=true 200
+
+[Mon, 04 Apr 2011 14:32:58 GMT] [info] [<0.24403.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 04 Apr 2011 14:32:58 GMT] [info] [<0.23847.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 04 Apr 2011 14:33:03 GMT] [info] [<0.24439.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=34 201
+
+[Mon, 04 Apr 2011 14:33:03 GMT] [info] [<0.24445.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Mon, 04 Apr 2011 14:33:03 GMT] [info] [<0.24446.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Mon, 04 Apr 2011 14:33:03 GMT] [info] [<0.24447.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+

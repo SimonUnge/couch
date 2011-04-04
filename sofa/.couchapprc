@@ -1,0 +1,9 @@
+{
+    "env":
+    {
+	"default":
+	{
+	    "db": "http://zhil:hamster@localhost:5984/sofa"
+	}
+    }
+}
