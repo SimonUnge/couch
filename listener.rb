@@ -2,9 +2,13 @@ require 'rubygems'
 require 'couchrest'
 require 'net/http'
 
-SERVER = CouchRest.new("127.0.0.1:5001")
-DB = SERVER.database("global_node")
-#@DB = "127.0.0.1:5001/global_node"
+puts "Port # of host:"
+port = gets.chop
+puts "database name:"
+node = gets.chop
+
+SERVER = CouchRest.new("127.0.0.1:" << port)
+DB = SERVER.database(node)
 
 ##GETTERS
 
@@ -18,7 +22,7 @@ end
 
 #Starts cont changes and prints json string of notification.
 def start_continuous_changes(host, port, db, heartbeat = '1000')
-    Net::HTTP.get_response(host, db << '/_changes?feed=continuous&heartbeat=' << heartbeat, port) do |response|
+    Net::HTTP.get_response(host, '/' << db << '/_changes?feed=continuous&heartbeat=' << heartbeat, port) do |response|
         response.read_body do |notification|
             if notification?(notification)          #Due to heartbeat, it's a newline instead of notification.  
                 result = JSON.parse(notification)
@@ -27,8 +31,12 @@ def start_continuous_changes(host, port, db, heartbeat = '1000')
                     puts "Here we go, getting the doc:"
                     doc = get_doc(get_doc_id(result))
                     puts doc
-                    if affects_me?(doc)
+                    if affects_me?(doc, db)
                         puts "YES, IT DID!"
+                        jobs = get_job(doc)
+                        jobs.each do |job|
+                            system(job)
+                        end
                     else
                         puts "nah, it was for #{doc["node"]}"
                     end
@@ -50,8 +58,8 @@ def notification_type(notification)
     end
 end
 
-def affects_me?(doc)
-    doc["node"] == "global_node"
+def affects_me?(doc, db)
+    doc["node"] == db || doc["node"] == "all_nodes"
 end
 
 def get_last_seq(changes)
@@ -73,6 +81,10 @@ def get_doc(did)
     DB.get(did)
 end
 
+def get_job(doc)
+    doc["job"]
+end
+
 def get_doc_from_changes(doc, changes)
     result_array = get_result_array(changes)
     doc_hash = get_hash_key_match("id", doc, result_array)
@@ -87,4 +99,4 @@ def get_doc_id(notification)
     notification["id"]
 end
 
-start_continuous_changes('127.0.0.1', 5001, '/global_node')
+start_continuous_changes('127.0.0.1', port, node)

@@ -1009,3 +1009,1011 @@
 
 [Mon, 04 Apr 2011 14:33:03 GMT] [info] [<0.24447.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
 
+[Wed, 06 Apr 2011 07:39:44 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://127.0.0.1:5003/
+
+[Wed, 06 Apr 2011 08:13:27 GMT] [info] [<0.103.0>] 127.0.0.1 - - 'POST' //_replicate 400
+
+[Wed, 06 Apr 2011 08:14:13 GMT] [info] [<0.2128.0>] 127.0.0.1 - - 'POST' //_replicate 400
+
+[Wed, 06 Apr 2011 08:14:33 GMT] [info] [<0.2175.0>] 127.0.0.1 - - 'POST' //_replicate 400
+
+[Wed, 06 Apr 2011 08:15:58 GMT] [info] [<0.2196.0>] 127.0.0.1 - - 'POST' //_replicate 400
+
+[Wed, 06 Apr 2011 08:16:49 GMT] [info] [<0.2281.0>] 127.0.0.1 - - 'POST' /_replicate 415
+
+[Wed, 06 Apr 2011 08:17:14 GMT] [info] [<0.2334.0>] 127.0.0.1 - - 'POST' /_replicate 415
+
+[Wed, 06 Apr 2011 08:19:38 GMT] [error] [<0.2360.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:19:38 GMT] [info] [<0.2360.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:19:50 GMT] [error] [<0.2505.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:19:50 GMT] [info] [<0.2505.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:20:37 GMT] [error] [<0.2518.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:20:37 GMT] [info] [<0.2518.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:20:38 GMT] [error] [<0.2566.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:20:38 GMT] [info] [<0.2566.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:21:08 GMT] [error] [<0.2568.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:21:08 GMT] [info] [<0.2568.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:22:07 GMT] [error] [<0.2599.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:22:07 GMT] [info] [<0.2599.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:26:10 GMT] [error] [<0.2659.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:26:10 GMT] [info] [<0.2659.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:28:00 GMT] [error] [<0.2903.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:28:00 GMT] [info] [<0.2903.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:28:23 GMT] [error] [<0.3013.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:28:23 GMT] [info] [<0.3013.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:28:49 GMT] [error] [<0.3038.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:28:49 GMT] [info] [<0.3038.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:28:50 GMT] [error] [<0.3065.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:28:50 GMT] [info] [<0.3065.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:28:52 GMT] [error] [<0.3067.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:28:52 GMT] [info] [<0.3067.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:29:57 GMT] [error] [<0.3069.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:29:57 GMT] [info] [<0.3069.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:30:09 GMT] [error] [<0.3136.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:30:09 GMT] [info] [<0.3136.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:30:33 GMT] [error] [<0.3149.0>] attempted upload of invalid JSON (set log_level to debug to log it)
+
+[Wed, 06 Apr 2011 08:30:33 GMT] [info] [<0.3149.0>] 127.0.0.1 - - 'POST' /_replicate 400
+
+[Wed, 06 Apr 2011 08:31:03 GMT] [info] [<0.3174.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 08:31:03 GMT] [info] [<0.3174.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:31:03 GMT] [info] [<0.3204.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:31:03 GMT] [info] [<0.3204.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 06 Apr 2011 08:31:03 GMT] [info] [<0.3174.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 06 Apr 2011 08:31:08 GMT] [info] [<0.3206.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 08:31:08 GMT] [info] [<0.3174.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 08:31:08 GMT] [info] [<0.3204.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Wed, 06 Apr 2011 08:31:08 GMT] [info] [<0.3204.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:31:08 GMT] [info] [<0.3174.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:31:08 GMT] [info] [<0.3206.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 08:31:58 GMT] [info] [<0.3218.0>] 127.0.0.1 - - 'HEAD' /reg_node/ 200
+
+[Wed, 06 Apr 2011 08:31:58 GMT] [info] [<0.3270.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 06 Apr 2011 08:31:58 GMT] [info] [<0.3271.0>] 127.0.0.1 - - 'GET' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 200
+
+[Wed, 06 Apr 2011 08:31:58 GMT] [info] [<0.3272.0>] 127.0.0.1 - - 'GET' /reg_node/_changes?style=all_docs&heartbeat=10000&since=34&feed=continuous 200
+
+[Wed, 06 Apr 2011 08:32:31 GMT] [info] [<0.3273.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 08:32:31 GMT] [info] [<0.3273.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:32:31 GMT] [info] [<0.3309.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:32:52 GMT] [info] [<0.3332.0>] Replication records differ. Scanning histories to find a common ancestor.
+
+[Wed, 06 Apr 2011 08:32:52 GMT] [info] [<0.3332.0>] no common ancestry -- performing full replication
+
+[Wed, 06 Apr 2011 08:32:52 GMT] [info] [<0.3309.0>] starting new replication "54413037a7c66b9b1f1a6b3fb741453d+continuous" at <0.3332.0>
+
+[Wed, 06 Apr 2011 08:32:52 GMT] [info] [<0.3309.0>] 127.0.0.1 - - 'POST' /_replicate 202
+
+[Wed, 06 Apr 2011 08:32:57 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 57
+
+[Wed, 06 Apr 2011 08:52:52 GMT] [info] [<0.3310.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 08:52:52 GMT] [info] [<0.4551.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:52:52 GMT] [info] [<0.3310.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:52:52 GMT] [info] [<0.4552.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 06 Apr 2011 08:52:52 GMT] [info] [<0.4553.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 06 Apr 2011 08:52:55 GMT] [info] [<0.4553.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 08:52:55 GMT] [info] [<0.4552.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 08:52:55 GMT] [info] [<0.4553.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Wed, 06 Apr 2011 08:52:55 GMT] [info] [<0.4553.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:52:55 GMT] [info] [<0.4552.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:52:55 GMT] [info] [<0.4552.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 08:52:57 GMT] [info] [<0.4552.0>] 127.0.0.1 - - 'GET' /reg_node/ruuuuuby?revs_info=true 200
+
+[Wed, 06 Apr 2011 08:52:57 GMT] [info] [<0.4552.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:52:57 GMT] [info] [<0.4553.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:53:31 GMT] [info] [<0.4554.0>] 127.0.0.1 - - 'PUT' /reg_node/ruuuuuby 201
+
+[Wed, 06 Apr 2011 08:53:31 GMT] [info] [<0.4594.0>] 127.0.0.1 - - 'GET' /reg_node/ruuuuuby?open_revs=["3-7bc7f629dd8cf22f20524b3958404a03"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 06 Apr 2011 08:53:31 GMT] [info] [<0.4554.0>] 127.0.0.1 - - 'GET' /reg_node/ruuuuuby?revs_info=true 200
+
+[Wed, 06 Apr 2011 08:53:32 GMT] [info] [<0.4595.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:53:32 GMT] [info] [<0.4554.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:53:36 GMT] [info] [<0.4598.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=35 201
+
+[Wed, 06 Apr 2011 08:53:36 GMT] [info] [<0.4604.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 06 Apr 2011 08:53:36 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 58
+
+[Wed, 06 Apr 2011 08:59:55 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 08:59:55 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 08:59:55 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Wed, 06 Apr 2011 08:59:55 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:59:55 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:59:55 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 08:59:57 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /reg_node/nuhem?revs_info=true 200
+
+[Wed, 06 Apr 2011 08:59:57 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:59:57 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 08:59:59 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 08:59:59 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 304
+
+[Wed, 06 Apr 2011 08:59:59 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 08:59:59 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 08:59:59 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:00 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 09:00:01 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /reg_node/fuck?revs_info=true 200
+
+[Wed, 06 Apr 2011 09:00:01 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:00:01 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:05 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 09:00:05 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 09:00:05 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 304
+
+[Wed, 06 Apr 2011 09:00:05 GMT] [info] [<0.4989.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:00:05 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:05 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 09:00:07 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /reg_node/first_doc_created_at_node3?revs_info=true 200
+
+[Wed, 06 Apr 2011 09:00:07 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:00:07 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:10 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 09:00:10 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 304
+
+[Wed, 06 Apr 2011 09:00:10 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 09:00:10 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:00:10 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:10 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 09:00:11 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /reg_node/doc1?revs_info=true 200
+
+[Wed, 06 Apr 2011 09:00:11 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:00:11 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:23 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'PUT' /reg_node/doc1 201
+
+[Wed, 06 Apr 2011 09:00:23 GMT] [info] [<0.4991.0>] 127.0.0.1 - - 'GET' /reg_node/doc1?open_revs=["10-35affdb5a9a2929dc8783b6cbe7057c0"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 06 Apr 2011 09:00:23 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /reg_node/doc1?revs_info=true 200
+
+[Wed, 06 Apr 2011 09:00:23 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:00:23 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:28 GMT] [info] [<0.5019.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=36 201
+
+[Wed, 06 Apr 2011 09:00:28 GMT] [info] [<0.5027.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 06 Apr 2011 09:00:28 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 59
+
+[Wed, 06 Apr 2011 09:00:45 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'PUT' /reg_node/doc1 201
+
+[Wed, 06 Apr 2011 09:00:45 GMT] [info] [<0.5028.0>] 127.0.0.1 - - 'GET' /reg_node/doc1?open_revs=["11-a89cc86b0baa08b92d5f685385143cc0"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 06 Apr 2011 09:00:45 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /reg_node/doc1?revs_info=true 200
+
+[Wed, 06 Apr 2011 09:00:45 GMT] [info] [<0.4988.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:00:45 GMT] [info] [<0.4605.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:00:50 GMT] [info] [<0.5050.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=37 201
+
+[Wed, 06 Apr 2011 09:00:50 GMT] [info] [<0.5058.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 06 Apr 2011 09:00:50 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 60
+
+[Wed, 06 Apr 2011 09:01:45 GMT] [info] [<0.5120.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 09:01:45 GMT] [info] [<0.5059.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 09:01:45 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 200
+
+[Wed, 06 Apr 2011 09:01:45 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:01:45 GMT] [info] [<0.5059.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:01:45 GMT] [info] [<0.5120.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 09:01:52 GMT] [info] [<0.5120.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 09:01:52 GMT] [info] [<0.5059.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 09:01:52 GMT] [info] [<0.5120.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11&startkey=%22_design%22&endkey=%22_design0%22 200
+
+[Wed, 06 Apr 2011 09:01:52 GMT] [info] [<0.5120.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:01:52 GMT] [info] [<0.5059.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:01:52 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 09:01:55 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 09:01:55 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 304
+
+[Wed, 06 Apr 2011 09:01:55 GMT] [info] [<0.5059.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 09:01:55 GMT] [info] [<0.5059.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 09:01:55 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 09:01:55 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 09:02:07 GMT] [info] [<0.5119.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=26 200
+
+[Wed, 06 Apr 2011 09:39:50 GMT] [info] [<0.5121.0>] 127.0.0.1 - - 'GET' /reg_node/NEW?open_revs=["2-3c1c50d06a1f1135c3b5f97bb588338c"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 06 Apr 2011 09:39:55 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 61
+
+[Wed, 06 Apr 2011 09:39:55 GMT] [info] [<0.7409.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=38 201
+
+[Wed, 06 Apr 2011 09:39:55 GMT] [info] [<0.7419.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 06 Apr 2011 09:45:21 GMT] [info] [<0.7420.0>] 127.0.0.1 - - 'GET' /reg_node/NEW?open_revs=["3-747b97117f73e2826d9032503846737a"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 06 Apr 2011 09:45:26 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 62
+
+[Wed, 06 Apr 2011 09:45:26 GMT] [info] [<0.7749.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=39 201
+
+[Wed, 06 Apr 2011 09:45:26 GMT] [info] [<0.7759.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 06 Apr 2011 10:25:44 GMT] [info] [<0.7760.0>] 127.0.0.1 - - 'PUT' /reg_node/april 201
+
+[Wed, 06 Apr 2011 10:25:44 GMT] [info] [<0.10201.0>] 127.0.0.1 - - 'GET' /reg_node/april?open_revs=["1-58b8044c75debfebfe0fe8bec7f6fee7"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 06 Apr 2011 10:25:49 GMT] [info] [<0.10202.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=40 201
+
+[Wed, 06 Apr 2011 10:25:49 GMT] [info] [<0.10211.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 06 Apr 2011 10:25:49 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 63
+
+[Wed, 06 Apr 2011 12:02:59 GMT] [info] [<0.10212.0>] 127.0.0.1 - - 'GET' /reg_node/shell_command?open_revs=["1-e043f139e6048d1b5834537c6774e168"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Wed, 06 Apr 2011 12:03:04 GMT] [info] [<0.3332.0>] recording a checkpoint for http://127.0.0.1:5001/global_node/ -> reg_node at source update_seq 64
+
+[Wed, 06 Apr 2011 12:03:04 GMT] [info] [<0.16145.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit?seq=41 201
+
+[Wed, 06 Apr 2011 12:03:04 GMT] [info] [<0.16155.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F46461c24c0e4eeb6eb49f75c634b2292 201
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [info] [<0.3332.0>] replication terminating because local DB is shutting down
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3332.0>] ** Generic server <0.3332.0> terminating 
+** Last message in was {'DOWN',#Ref<0.0.0.13234>,process,<0.3210.0>,shutdown}
+** When Server state == {state,<0.3339.0>,<0.3341.0>,<0.3343.0>,<0.3345.0>,
+                            {http_db,"http://127.0.0.1:5001/global_node/",[],
+                                [],
+                                [{"User-Agent","CouchDB/1.0.2"},
+                                 {"Accept","application/json"},
+                                 {"Accept-Encoding","gzip"}],
+                                [],get,nil,
+                                [{response_format,binary},
+                                 {inactivity_timeout,30000}],
+                                10,500,nil},
+                            {db,<0.3210.0>,<0.3211.0>,nil,
+                                <<"1302078663810776">>,<0.3208.0>,<0.3212.0>,
+                                {db_header,5,34,0,
+                                    {218634,{18,1}},
+                                    {220115,19},
+                                    {226384,[]},
+                                    0,nil,nil,1000},
+                                34,
+                                {btree,<0.3208.0>,
+                                    {218634,{18,1}},
+                                    #Fun<couch_db_updater.7.10053969>,
+                                    #Fun<couch_db_updater.8.35220795>,
+                                    #Fun<couch_btree.5.124754102>,
+                                    #Fun<couch_db_updater.9.107593676>},
+                                {btree,<0.3208.0>,
+                                    {220115,19},
+                                    #Fun<couch_db_updater.10.30996817>,
+                                    #Fun<couch_db_updater.11.96515267>,
+                                    #Fun<couch_btree.5.124754102>,
+                                    #Fun<couch_db_updater.12.117826253>},
+                                {btree,<0.3208.0>,
+                                    {226384,[]},
+                                    #Fun<couch_btree.0.83553141>,
+                                    #Fun<couch_btree.1.30790806>,
+                                    #Fun<couch_btree.2.124754102>,nil},
+                                34,<<"reg_node">>,
+                                "/Users/simonunge/Programming/couchdb/couchdb3/data/reg_node.couch",
+                                [],[],nil,
+                                {user_ctx,null,
+                                    [<<"_admin">>],
+                                    <<"{couch_httpd_auth, default_authentication_handler}">>},
+                                nil,1000,
+                                [before_header,after_header,on_file_open],
+                                false},
+                            true,false,
+                            ["54413037a7c66b9b1f1a6b3fb741453d",
+                             {[{<<"source">>,
+                                <<"http://127.0.0.1:5001/global_node">>},
+                               {<<"target">>,<<"reg_node">>},
+                               {<<"continuous">>,true}]},
+                             {user_ctx,null,
+                                 [<<"_admin">>],
+                                 <<"{couch_httpd_auth, default_authentication_handler}">>}],
+                            nil,0,[],<<"07a96e96f4045953387901f43bf74e89">>,
+                            {doc,
+                                <<"_local/54413037a7c66b9b1f1a6b3fb741453d">>,
+                                {0,[<<"24">>]},
+                                {[{<<"session_id">>,
+                                   <<"2def0118128df80633b9c34d70d364e8">>},
+                                  {<<"source_last_seq">>,57},
+                                  {<<"history">>,
+                                   [{[{<<"session_id">>,
+                                       <<"2def0118128df80633b9c34d70d364e8">>},
+                                      {<<"start_time">>,
+                                       <<"Wed, 06 Apr 2011 08:32:27 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Wed, 06 Apr 2011 08:32:32 GMT">>},
+                                      {<<"start_last_seq">>,0},
+                                      {<<"end_last_seq">>,57},
+                                      {<<"recorded_seq">>,57},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,0},
+                                      {<<"docs_read">>,0},
+                                      {<<"docs_written">>,0},
+                                      {<<"doc_write_failures">>,0}]}]}]},
+                                [],false,[]},
+                            {doc,
+                                <<"_local/54413037a7c66b9b1f1a6b3fb741453d">>,
+                                {0,[<<"22">>]},
+                                {[{<<"session_id">>,
+                                   <<"afb1075ca5db2cc3760bfb9388e9126c">>},
+                                  {<<"source_last_seq">>,14},
+                                  {<<"history">>,
+                                   [{[{<<"session_id">>,
+                                       <<"afb1075ca5db2cc3760bfb9388e9126c">>},
+                                      {<<"start_time">>,
+                                       <<"Wed, 30 Mar 2011 09:51:21 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Wed, 30 Mar 2011 13:06:00 GMT">>},
+                                      {<<"start_last_seq">>,0},
+                                      {<<"end_last_seq">>,14},
+                                      {<<"recorded_seq">>,14},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,14},
+                                      {<<"docs_read">>,14},
+                                      {<<"docs_written">>,14},
+                                      {<<"doc_write_failures">>,0}]}]}]},
+                                [],false,[]},
+                            "Wed, 06 Apr 2011 08:32:52 GMT",
+                            <<"1302078653481694">>,<<"1302078663810776">>,
+                            {[{<<"session_id">>,
+                               <<"07a96e96f4045953387901f43bf74e89">>},
+                              {<<"source_last_seq">>,64},
+                              {<<"history">>,
+                               [{[{<<"session_id">>,
+                                   <<"07a96e96f4045953387901f43bf74e89">>},
+                                  {<<"start_time">>,
+                                   <<"Wed, 06 Apr 2011 08:32:52 GMT">>},
+                                  {<<"end_time">>,
+                                   <<"Wed, 06 Apr 2011 12:03:04 GMT">>},
+                                  {<<"start_last_seq">>,0},
+                                  {<<"end_last_seq">>,64},
+                                  {<<"recorded_seq">>,64},
+                                  {<<"missing_checked">>,0},
+                                  {<<"missing_found">>,7},
+                                  {<<"docs_read">>,7},
+                                  {<<"docs_written">>,7},
+                                  {<<"doc_write_failures">>,0}]}]}]},
+                            [],false,64,49202,nil,nil,<0.3346.0>}
+** Reason for termination == 
+** {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}}
+
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3332.0>] {error_report,<0.30.0>,
+    {<0.3332.0>,crash_report,
+     [[{initial_call,{couch_rep,init,['Argument__1']}},
+       {pid,<0.3332.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}},
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [couch_rep_sup,couch_primary_services,couch_server_sup,<0.31.0>]},
+       {messages,[]},
+       {links,
+           [<0.3343.0>,<0.3346.0>,<0.3345.0>,<0.3339.0>,<0.3341.0>,<0.81.0>]},
+       {dictionary,[{task_status_update,{{1302,91379,394939},0}}]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,6765},
+       {stack_size,24},
+       {reductions,17707}],
+      [{neighbour,
+           [{pid,<0.3345.0>},
+            {registered_name,[]},
+            {initial_call,{erlang,apply,2}},
+            {current_function,{gen,do_call,4}},
+            {ancestors,[]},
+            {messages,[]},
+            {links,[<0.3332.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,waiting},
+            {heap_size,2584},
+            {stack_size,20},
+            {reductions,718}]},
+       {neighbour,
+           [{pid,<0.3346.0>},
+            {registered_name,[]},
+            {initial_call,{couch_event_sup,init,['Argument__1']}},
+            {current_function,{gen_server,loop,6}},
+            {ancestors,
+                [<0.3332.0>,couch_rep_sup,couch_primary_services,
+                 couch_server_sup,<0.31.0>]},
+            {messages,[]},
+            {links,[<0.3332.0>,<0.84.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,waiting},
+            {heap_size,233},
+            {stack_size,9},
+            {reductions,32}]}]]}}
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.81.0>] {error_report,<0.30.0>,
+    {<0.81.0>,supervisor_report,
+     [{supervisor,{local,couch_rep_sup}},
+      {errorContext,child_terminated},
+      {reason,{noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}}},
+      {offender,
+          [{pid,<0.3332.0>},
+           {name,"54413037a7c66b9b1f1a6b3fb741453d+continuous"},
+           {mfargs,{gen_server,start_link,undefined}},
+           {restart_type,temporary},
+           {shutdown,1},
+           {child_type,worker}]}]}}
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3341.0>] ** Generic server <0.3341.0> terminating 
+** Last message in was {'EXIT',<0.3332.0>,
+                           {noproc,
+                               {gen_server,call,
+                                   [<0.3212.0>,{drop,<0.3332.0>}]}}}
+** When Server state == {state,<0.3342.0>,nil,<0.3332.0>,false,0,
+                               {<0.3344.0>,#Ref<0.0.0.68980>},
+                               {[],[]},
+                               64,64,64}
+** Reason for termination == 
+** {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}}
+
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3341.0>] {error_report,<0.30.0>,
+    {<0.3341.0>,crash_report,
+     [[{initial_call,{couch_rep_missing_revs,init,['Argument__1']}},
+       {pid,<0.3341.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}},
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [<0.3332.0>,couch_rep_sup,couch_primary_services,couch_server_sup,
+            <0.31.0>]},
+       {messages,[]},
+       {links,[<0.3342.0>]},
+       {dictionary,[]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,610},
+       {stack_size,24},
+       {reductions,344}],
+      []]}}
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3343.0>] ** Generic server <0.3343.0> terminating 
+** Last message in was {'EXIT',<0.3332.0>,
+                           {noproc,
+                               {gen_server,call,
+                                   [<0.3212.0>,{drop,<0.3332.0>}]}}}
+** When Server state == {state,<0.3332.0>,
+                            {http_db,"http://127.0.0.1:5001/global_node/",[],
+                                [],
+                                [{"User-Agent","CouchDB/1.0.2"},
+                                 {"Accept","application/json"},
+                                 {"Accept-Encoding","gzip"}],
+                                [],get,nil,
+                                [{response_format,binary},
+                                 {inactivity_timeout,30000}],
+                                10,500,nil},
+                            <0.3341.0>,<0.3344.0>,[],0,
+                            {[],[]},
+                            {<0.3345.0>,#Ref<0.0.0.69004>},
+                            false,0,nil,[],"@"}
+** Reason for termination == 
+** {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}}
+
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3343.0>] {error_report,<0.30.0>,
+    {<0.3343.0>,crash_report,
+     [[{initial_call,{couch_rep_reader,init,['Argument__1']}},
+       {pid,<0.3343.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}},
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [<0.3332.0>,couch_rep_sup,couch_primary_services,couch_server_sup,
+            <0.31.0>]},
+       {messages,[]},
+       {links,[<0.3344.0>]},
+       {dictionary,[]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,1597},
+       {stack_size,24},
+       {reductions,608}],
+      [{neighbour,
+           [{pid,<0.3344.0>},
+            {registered_name,[]},
+            {initial_call,{erlang,apply,2}},
+            {current_function,{gen,do_call,4}},
+            {ancestors,[]},
+            {messages,
+                [{'DOWN',#Ref<0.0.0.68980>,process,<0.3341.0>,
+                     {noproc,
+                         {gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}}}]},
+            {links,[<0.3343.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,runnable},
+            {heap_size,610},
+            {stack_size,20},
+            {reductions,210}]}]]}}
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3339.0>] ** Generic server <0.3339.0> terminating 
+** Last message in was {'EXIT',<0.3332.0>,
+                           {noproc,
+                               {gen_server,call,
+                                   [<0.3212.0>,{drop,<0.3332.0>}]}}}
+** When Server state == {state,nil,nil,
+                            [<0.3332.0>,
+                             {http_db,"http://127.0.0.1:5001/global_node/",
+                                 [],"_changes",
+                                 [{"User-Agent","CouchDB/1.0.2"},
+                                  {"Accept","application/json"}],
+                                 [{"style",all_docs},
+                                  {"heartbeat",10000},
+                                  {"since",0},
+                                  {"feed",continuous}],
+                                 get,nil,
+                                 [{stream_to,{<0.3339.0>,once}},
+                                  {response_format,binary}],
+                                 10,500,<0.3340.0>},
+                             0,
+                             [{<<"source">>,
+                               <<"http://127.0.0.1:5001/global_node">>},
+                              {<<"target">>,<<"reg_node">>},
+                              {<<"continuous">>,true}]],
+                            57,<0.3340.0>,
+                            {1302,78772,898991},
+                            false,0,<<>>,
+                            {<0.3342.0>,#Ref<0.0.0.68976>},
+                            {[],[]}}
+** Reason for termination == 
+** {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}}
+
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [error] [<0.3339.0>] {error_report,<0.30.0>,
+    {<0.3339.0>,crash_report,
+     [[{initial_call,{couch_rep_changes_feed,init,['Argument__1']}},
+       {pid,<0.3339.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {noproc,{gen_server,call,[<0.3212.0>,{drop,<0.3332.0>}]}},
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [<0.3332.0>,couch_rep_sup,couch_primary_services,couch_server_sup,
+            <0.31.0>]},
+       {messages,
+           [{ibrowse_async_response,
+                {1302,78772,898991},
+                {error,closing_on_request}}]},
+       {links,[]},
+       {dictionary,[{timeout,{1302091869768580,#Ref<0.0.0.71075>}}]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,987},
+       {stack_size,24},
+       {reductions,108683}],
+      []]}}
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [info] [<0.16589.0>] 127.0.0.1 - - 'DELETE' /reg_node/ 200
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [info] [<0.16633.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [info] [<0.16632.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [info] [<0.16631.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 12:10:43 GMT] [info] [<0.16631.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 06 Apr 2011 12:10:52 GMT] [info] [<0.16631.0>] 127.0.0.1 - - 'PUT' /reg_node/ 201
+
+[Wed, 06 Apr 2011 12:10:53 GMT] [info] [<0.16631.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 12:10:53 GMT] [info] [<0.16625.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 12:10:53 GMT] [info] [<0.16630.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=26 200
+
+[Wed, 06 Apr 2011 12:10:53 GMT] [info] [<0.16630.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:10:53 GMT] [info] [<0.16625.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:10:53 GMT] [info] [<0.16631.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 12:11:03 GMT] [info] [<0.16631.0>] 127.0.0.1 - - 'GET' /_uuids?count=1 200
+
+[Wed, 06 Apr 2011 12:11:03 GMT] [info] [<0.16631.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:11:03 GMT] [info] [<0.16625.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:12:33 GMT] [info] [<0.16636.0>] 127.0.0.1 - - 'PUT' /reg_node/test 201
+
+[Wed, 06 Apr 2011 12:12:33 GMT] [info] [<0.16636.0>] 127.0.0.1 - - 'GET' /reg_node/test?revs_info=true 200
+
+[Wed, 06 Apr 2011 12:12:33 GMT] [info] [<0.16756.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:12:33 GMT] [info] [<0.16636.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:12:40 GMT] [info] [<0.16636.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 12:12:40 GMT] [info] [<0.16756.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=26 200
+
+[Wed, 06 Apr 2011 12:12:40 GMT] [info] [<0.16757.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 12:12:40 GMT] [info] [<0.16757.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:12:40 GMT] [info] [<0.16756.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:12:40 GMT] [info] [<0.16756.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 12:15:15 GMT] [info] [<0.16765.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 12:15:15 GMT] [info] [<0.16765.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:15:15 GMT] [info] [<0.16924.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:15:35 GMT] [info] [<0.16924.0>] starting new replication "f0463502c8de0faf12c4028804f0f968" at <0.16946.0>
+
+[Wed, 06 Apr 2011 12:15:35 GMT] [info] [<0.16924.0>] 127.0.0.1 - - 'POST' /_replicate 200
+
+[Wed, 06 Apr 2011 12:15:51 GMT] [info] [<0.16924.0>] starting new replication "54413037a7c66b9b1f1a6b3fb741453d" at <0.16975.0>
+
+[Wed, 06 Apr 2011 12:15:51 GMT] [info] [<0.16924.0>] 127.0.0.1 - - 'POST' /_replicate 200
+
+[Wed, 06 Apr 2011 12:15:54 GMT] [error] [<0.16924.0>] Uncaught error in HTTP request: {error,
+                                 {case_clause,
+                                  {error,
+                                   {'EXIT',
+                                    {badarg,
+                                     [{erlang,apply,
+                                       [gen_server,start_link,undefined]},
+                                      {supervisor,do_start_child,2},
+                                      {supervisor,handle_call,3},
+                                      {gen_server,handle_msg,5},
+                                      {proc_lib,init_p_do_apply,3}]}}}}}
+
+[Wed, 06 Apr 2011 12:15:54 GMT] [info] [<0.16924.0>] Stacktrace: [{couch_rep,start_replication_server,1},
+             {couch_rep,replicate,2},
+             {couch_httpd_misc_handlers,handle_replicate_req,1},
+             {couch_httpd,handle_request_int,5},
+             {mochiweb_http,headers,5},
+             {proc_lib,init_p_do_apply,3}]
+
+[Wed, 06 Apr 2011 12:15:54 GMT] [info] [<0.16924.0>] 127.0.0.1 - - 'POST' /_replicate 500
+
+[Wed, 06 Apr 2011 12:16:03 GMT] [info] [<0.16924.0>] starting new replication "c220190eac9fdfb5562978026180e34a+continuous" at <0.16999.0>
+
+[Wed, 06 Apr 2011 12:16:03 GMT] [info] [<0.16924.0>] 127.0.0.1 - - 'POST' /_replicate 202
+
+[Wed, 06 Apr 2011 12:16:03 GMT] [info] [<0.16924.0>] 127.0.0.1 - - 'POST' /_replicate 202
+
+[Wed, 06 Apr 2011 12:16:08 GMT] [info] [<0.16999.0>] recording a checkpoint for reg_node -> http://127.0.0.1:5001/global_node/ at source update_seq 1
+
+[Wed, 06 Apr 2011 12:16:54 GMT] [info] [<0.16925.0>] 127.0.0.1 - - 'HEAD' /reg_node/ 200
+
+[Wed, 06 Apr 2011 12:16:54 GMT] [info] [<0.17070.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 06 Apr 2011 12:16:54 GMT] [info] [<0.17071.0>] 127.0.0.1 - - 'GET' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 404
+
+[Wed, 06 Apr 2011 12:16:54 GMT] [info] [<0.17072.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:16:59 GMT] [info] [<0.17073.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:16:59 GMT] [info] [<0.17079.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:17:33 GMT] [info] [<0.17080.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 12:17:33 GMT] [info] [<0.17080.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:17:33 GMT] [info] [<0.17115.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:17:33 GMT] [info] [<0.17115.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 06 Apr 2011 12:17:33 GMT] [info] [<0.17080.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 06 Apr 2011 12:17:34 GMT] [info] [<0.17080.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 12:17:34 GMT] [info] [<0.17115.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 12:17:34 GMT] [info] [<0.17080.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=26 200
+
+[Wed, 06 Apr 2011 12:17:34 GMT] [info] [<0.17116.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 12:17:34 GMT] [info] [<0.17080.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 12:17:34 GMT] [info] [<0.17115.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 12:21:50 GMT] [info] [<0.17118.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:21:50 GMT] [info] [<0.17380.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:21:55 GMT] [info] [<0.17381.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:21:55 GMT] [info] [<0.17388.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:21:55 GMT] [info] [<0.16999.0>] recording a checkpoint for reg_node -> http://127.0.0.1:5001/global_node/ at source update_seq 2
+
+[Wed, 06 Apr 2011 12:21:55 GMT] [error] [<0.16999.0>] checkpoint failure: conflict (are you replicating to yourself?)
+
+[Wed, 06 Apr 2011 12:22:11 GMT] [info] [<0.17389.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:22:11 GMT] [info] [<0.17410.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:22:16 GMT] [info] [<0.17411.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:22:16 GMT] [info] [<0.17418.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:23:02 GMT] [info] [<0.17419.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:23:02 GMT] [info] [<0.17467.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:23:07 GMT] [info] [<0.17468.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:23:07 GMT] [info] [<0.17475.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:26:25 GMT] [info] [<0.17476.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:26:25 GMT] [info] [<0.17678.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:26:30 GMT] [info] [<0.17679.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:26:30 GMT] [info] [<0.17686.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:29:43 GMT] [info] [<0.17687.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:29:43 GMT] [info] [<0.17884.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:29:48 GMT] [info] [<0.17885.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:29:48 GMT] [info] [<0.17893.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:29:53 GMT] [info] [<0.17894.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:29:53 GMT] [info] [<0.17899.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:29:58 GMT] [info] [<0.17900.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:29:58 GMT] [info] [<0.17908.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:31:10 GMT] [info] [<0.17909.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:31:10 GMT] [info] [<0.17983.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:31:15 GMT] [info] [<0.17984.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:31:15 GMT] [info] [<0.17991.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:32:54 GMT] [info] [<0.17992.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:32:54 GMT] [info] [<0.18093.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:32:59 GMT] [info] [<0.18094.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:32:59 GMT] [info] [<0.18101.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:53:44 GMT] [info] [<0.18102.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:53:44 GMT] [info] [<0.19368.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:53:49 GMT] [info] [<0.19369.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:53:49 GMT] [info] [<0.19377.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 12:54:44 GMT] [info] [<0.19378.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 12:54:44 GMT] [info] [<0.19435.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 12:54:49 GMT] [info] [<0.19436.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 12:54:49 GMT] [info] [<0.19444.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 13:53:33 GMT] [info] [<0.19445.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 13:53:33 GMT] [info] [<0.23027.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 13:53:37 GMT] [info] [<0.23028.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 13:53:37 GMT] [info] [<0.23034.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 13:53:38 GMT] [info] [<0.23035.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 13:53:38 GMT] [info] [<0.23038.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 13:53:41 GMT] [info] [<0.23039.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 13:53:41 GMT] [info] [<0.23044.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 13:53:46 GMT] [info] [<0.23045.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 13:53:46 GMT] [info] [<0.23053.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 13:54:08 GMT] [info] [<0.23054.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 13:54:08 GMT] [info] [<0.23076.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 13:54:08 GMT] [info] [<0.23054.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 13:54:08 GMT] [info] [<0.23076.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 06 Apr 2011 13:54:08 GMT] [info] [<0.23077.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 06 Apr 2011 13:54:09 GMT] [info] [<0.23077.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 13:54:09 GMT] [info] [<0.23076.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 13:54:09 GMT] [info] [<0.23077.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=26 200
+
+[Wed, 06 Apr 2011 13:54:09 GMT] [info] [<0.23077.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 13:54:09 GMT] [info] [<0.23076.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 13:54:09 GMT] [info] [<0.23054.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 13:56:27 GMT] [info] [<0.23078.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 13:56:27 GMT] [info] [<0.23220.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 13:56:32 GMT] [info] [<0.23221.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 13:56:32 GMT] [info] [<0.23228.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 14:00:38 GMT] [info] [<0.23229.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 14:00:38 GMT] [info] [<0.23480.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 14:00:43 GMT] [info] [<0.23481.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 14:00:43 GMT] [info] [<0.23488.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 14:06:03 GMT] [info] [<0.23489.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 14:06:03 GMT] [info] [<0.23816.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 14:06:08 GMT] [info] [<0.23817.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 14:06:08 GMT] [info] [<0.23824.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 14:08:00 GMT] [info] [<0.23825.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 14:08:00 GMT] [info] [<0.23940.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 14:08:05 GMT] [info] [<0.23941.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 14:08:05 GMT] [info] [<0.23948.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 14:34:43 GMT] [info] [<0.23949.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 14:34:43 GMT] [info] [<0.25574.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 14:34:48 GMT] [info] [<0.25575.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 14:34:48 GMT] [info] [<0.25583.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+
+[Wed, 06 Apr 2011 15:31:34 GMT] [info] [<0.25585.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Wed, 06 Apr 2011 15:31:34 GMT] [info] [<0.25585.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 15:31:34 GMT] [info] [<0.29047.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 15:31:34 GMT] [info] [<0.29048.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Wed, 06 Apr 2011 15:31:34 GMT] [info] [<0.29049.0>] 127.0.0.1 - - 'GET' /reg_node/ 200
+
+[Wed, 06 Apr 2011 15:31:35 GMT] [info] [<0.29049.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Wed, 06 Apr 2011 15:31:35 GMT] [info] [<0.29047.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Wed, 06 Apr 2011 15:31:35 GMT] [info] [<0.29048.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=26 200
+
+[Wed, 06 Apr 2011 15:31:35 GMT] [info] [<0.29048.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Wed, 06 Apr 2011 15:31:35 GMT] [info] [<0.29049.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Wed, 06 Apr 2011 15:31:36 GMT] [info] [<0.29047.0>] 127.0.0.1 - - 'GET' / 200
+
+[Wed, 06 Apr 2011 15:32:51 GMT] [info] [<0.29050.0>] 127.0.0.1 - - 'POST' /reg_node/_missing_revs 200
+
+[Wed, 06 Apr 2011 15:32:51 GMT] [info] [<0.29129.0>] 127.0.0.1 - - 'POST' /reg_node/_bulk_docs 201
+
+[Wed, 06 Apr 2011 15:32:56 GMT] [info] [<0.29130.0>] 127.0.0.1 - - 'POST' /reg_node/_ensure_full_commit 201
+
+[Wed, 06 Apr 2011 15:32:56 GMT] [info] [<0.29137.0>] 127.0.0.1 - - 'PUT' /reg_node/_local%2F6636ddbb33cb61d5235f85cce5688562 201
+

@@ -1,8 +1,9 @@
 LISTENER:
 Problem
 -Om notificationen är att den är deleted, deleted=true, så går det inte att hämta den. Resultcrash. Möjliga lösning är att helt sonika kolla vilken sorts change det är.
-
+-Om notificationen inte innehåller ett job-key pajjar skiten.
 
 
 Funktioner som behövs:
-notification_type() -> vilken typ av notification som kommit. 
+notification_type() -> vilken typ av notification som kommit. fixat
+
