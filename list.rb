@@ -19,31 +19,30 @@ def get_changes
   CouhRest.get(SERVER.uri << DB.uri << "/_changes")
 end
 
-#Starts cont changes and prints json string of notification.
+def handle_notification(notification, db)
+  result = JSON.parse(notification)
+  puts result
+  if (notification_type(notification) == "save/update") #XXX not good to get non-existing doc.
+    puts "Here we go, getting the doc:"
+    doc = get_doc(get_doc_id(result))
+    puts doc
+    jobs = get_job(doc) #Getting the key job, which, for now, is an array.
+    jobs.each do |job| 
+      if my_job(job, db) #The job could be for this node, or other.
+        system(job[db])  #Shell call
+        sleep(1)
+      end
+    end
+  end
+end
+
+#Starts cont changes.
 def start_continuous_changes(host, port, db, heartbeat = '1000')
-  Net::HTTP.get_response(host, '/' << db << '/_changes?feed=continuous&heartbeat=' << heartbeat, port) do |response|
+  path = '/' << db << '/_changes?feed=continuous&heartbeat=' << heartbeat
+  Net::HTTP.get_response(host, path, port) do |response|
     response.read_body do |notification|
       if notification?(notification)          #Due to heartbeat, it's a newline instead of notification.  
-        result = JSON.parse(notification)
-        puts result
-        if (notification_type(notification) == "save/update") #not good to get non-existing doc.
-          puts "Here we go, getting the doc:"
-          doc = get_doc(get_doc_id(result))
-          puts doc
-          
-          if affects_me?(doc, db)
-            puts "YES, IT DID!"
-            jobs = get_job(doc)
-            jobs.each do |job|
-              if my_job(job, db)
-                system(job[db])
-                sleep(1)
-              end
-            end
-          else
-            puts "nah, it was for #{doc["node"]}"
-          end
-        end
+        handle_notification(notification, db) #Hopefully, I do not need to work with start_cont_changes any more.
       end
     end
   end

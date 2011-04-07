@@ -11995,3 +11995,5 @@
 
 [Wed, 06 Apr 2011 15:32:56 GMT] [info] [<0.29807.0>] 127.0.0.1 - - 'PUT' /global_node/_local%2Fc220190eac9fdfb5562978026180e34a 201
 
+[Thu, 07 Apr 2011 07:47:54 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://0.0.0.0:5001/
+
