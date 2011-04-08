@@ -10,29 +10,39 @@ node = gets.chop
 SERVER = CouchRest.new("127.0.0.1:" << port)
 DB = SERVER.database(node)
 
-##GETTERS
-
-#Get the changes for the database, using polling for now, resulting in a
-#a hash with two(?) key: "results" and "last_seq"
-
-def get_changes
-  CouhRest.get(SERVER.uri << DB.uri << "/_changes")
-end
-
 def handle_notification(notification, db)
   result = JSON.parse(notification)
-  puts result
+  #puts result
   if (notification_type(notification) == "save/update") #XXX not good to get non-existing doc.
-    puts "Here we go, getting the doc:"
+    #puts "Here we go, getting the doc:"
     doc = get_doc(get_doc_id(result))
-    puts doc
-    jobs = get_job(doc) #Getting the key job, which, for now, is an array.
-    jobs.each do |job| 
-      if my_job(job, db) #The job could be for this node, or other.
-        system(job[db])  #Shell call
-        sleep(1)
+    #puts doc
+    job_arr = get_job_arr(doc) #Getting the key job, which, for now, is an array.
+    step = get_step(doc)
+    #sleep(rand(5))
+    if step < job_arr.length  
+      job = get_job(job_arr, step)
+      if my_job?(job, db)      #CHANGE NAME DAMN IT, FROM DB TO NODE XXXX
+        if !has_winner?(job)          # if no winner is selected
+          puts "I will try to claim#{db}"
+          if !has_been_claimed?(job)  # and if no one has claimed it. XXX SAMMA RAD?
+            set_claim(job, db)
+            save_doc(doc)
+          end
+        elsif is_winner?(job, db)
+          system(job["do"])
+          set_step(doc)
+          save_doc(doc)
+        end
       end
     end
+  end
+end
+
+def save_doc(doc)
+  begin
+    DB.save_doc(doc)
+  rescue RestClient::Conflict
   end
 end
 
@@ -48,6 +58,7 @@ def start_continuous_changes(host, port, db, heartbeat = '1000')
   end
 end
 
+#CHECKERS
 def notification?(notification)
   (notification != "\n")
 end
@@ -64,45 +75,66 @@ def affects_me?(doc, db)
   doc["node"] == db || doc["node"] == "all_nodes"
 end
 
-def get_last_seq(changes)
-  changes["last_seq"]
+def my_job?(job, db)
+  job["target"] == db || job["target"] == "any" #XXX Ugly, but to see if job is for just me
 end
 
-def get_result_array(changes)
-  changes["results"]
+def has_winner?(job)
+  job["winner"] != nil
 end
 
-def get_hash_key_match(key, match, array)
-  array.find do |hash|
-    hash[key] == match
-  end
+def is_winner?(job, node_id)
+  job["winner"] == node_id
 end
 
+def has_been_claimed?(job)
+  job["claimed_by"] != nil
+end
+
+def has_claimed?(job, node_id)
+  job["claimed_by"] == node_id
+end
+
+#GETTERS
 #Get the document "did".
 def get_doc(did)
   DB.get(did)
 end
 
-def get_job(doc)
-  doc["job"]
-end
-
-def my_job(job, db)
-  job.has_key?(db)
-end
-
-def get_doc_from_changes(doc, changes)
-  result_array = get_result_array(changes)
-  doc_hash = get_hash_key_match("id", doc, result_array)
-end
-
-def latest_change(changes)
-  result_arr = get_result_array(changes)
-  result_arr[-1]
-end
-
+#Returns the ID och the document.
 def get_doc_id(notification)
   notification["id"]
 end
+
+def get_job_arr(doc)
+  doc["job"]
+end
+
+def get_job(job_arr, step)
+  job_arr[step]
+end
+
+def get_num_jobs(job_arr)
+  job_arr.length
+end
+
+def get_winner(job)
+  job["winner"]
+end
+
+def get_step(doc)
+  doc["step"]
+end
+
+#SETTERS
+
+def set_claim(job, node_id)
+  job["claimed_by"] = node_id
+end
+
+def set_step(doc)
+  doc["step"] += 1
+end
+
 
 start_continuous_changes('127.0.0.1', port, node)

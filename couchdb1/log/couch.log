@@ -11997,3 +11997,67 @@
 
 [Thu, 07 Apr 2011 07:47:54 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://0.0.0.0:5001/
 
+[Thu, 07 Apr 2011 13:10:57 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://0.0.0.0:5001/
+
+[Thu, 07 Apr 2011 13:11:57 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://0.0.0.0:5002/
+
+[Thu, 07 Apr 2011 13:12:18 GMT] [error] [<0.128.0>] {error_report,<0.30.0>,
+              {<0.128.0>,crash_report,
+               [[{initial_call,{couch_rep,init,['Argument__1']}},
+                 {pid,<0.128.0>},
+                 {registered_name,[]},
+                 {error_info,{exit,{db_not_found,<<"reg_node">>},
+                                   [{gen_server,init_it,6},
+                                    {proc_lib,init_p_do_apply,3}]}},
+                 {ancestors,[couch_rep_sup,couch_primary_services,
+                             couch_server_sup,<0.31.0>]},
+                 {messages,[]},
+                 {links,[<0.81.0>]},
+                 {dictionary,[]},
+                 {trap_exit,true},
+                 {status,running},
+                 {heap_size,2584},
+                 {stack_size,24},
+                 {reductions,697}],
+                []]}}
+
+[Thu, 07 Apr 2011 13:12:18 GMT] [info] [<0.103.0>] 127.0.0.1 - - 'POST' /_replicate 404
+
+[Thu, 07 Apr 2011 13:12:45 GMT] [info] [<0.127.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 404
+
+[Thu, 07 Apr 2011 13:12:45 GMT] [info] [<0.127.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Thu, 07 Apr 2011 13:12:45 GMT] [info] [<0.163.0>] 127.0.0.1 - - 'GET' /reg_node/_all_docs?limit=11 404
+
+[Thu, 07 Apr 2011 13:12:45 GMT] [info] [<0.163.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Thu, 07 Apr 2011 13:12:45 GMT] [info] [<0.127.0>] 127.0.0.1 - - 'GET' / 200
+
+[Thu, 07 Apr 2011 13:12:49 GMT] [info] [<0.127.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Thu, 07 Apr 2011 13:12:50 GMT] [info] [<0.127.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Thu, 07 Apr 2011 13:12:50 GMT] [info] [<0.127.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Thu, 07 Apr 2011 13:12:50 GMT] [info] [<0.163.0>] 127.0.0.1 - - 'GET' / 200
+
+[Thu, 07 Apr 2011 13:12:50 GMT] [info] [<0.167.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Thu, 07 Apr 2011 13:12:50 GMT] [info] [<0.176.0>] 127.0.0.1 - - 'GET' /fooling/ 200
+
+[Thu, 07 Apr 2011 13:12:50 GMT] [info] [<0.177.0>] 127.0.0.1 - - 'GET' /fooo/ 200
+
+[Thu, 07 Apr 2011 13:12:50 GMT] [info] [<0.178.0>] 127.0.0.1 - - 'GET' /global_node/ 200
+
+[Thu, 07 Apr 2011 13:12:56 GMT] [info] [<0.176.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Thu, 07 Apr 2011 13:12:56 GMT] [info] [<0.178.0>] 127.0.0.1 - - 'GET' /global_node/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Thu, 07 Apr 2011 13:12:56 GMT] [info] [<0.177.0>] 127.0.0.1 - - 'GET' /global_node/_all_docs?limit=11 200
+
+[Thu, 07 Apr 2011 13:12:56 GMT] [info] [<0.177.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Thu, 07 Apr 2011 13:12:56 GMT] [info] [<0.178.0>] 127.0.0.1 - - 'GET' / 200
+
+[Thu, 07 Apr 2011 13:12:56 GMT] [info] [<0.176.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
