@@ -22,19 +22,7 @@ def handle_notification(notification, db)
     if step < job_arr.length  
       job = get_job(job_arr, step)
       if target_any?(job, db)      #CHANGE NAME DAMN IT, FROM DB TO NODE XXXX
-        if !has_winner?(job)          # if no winner is selected
-          puts "#{db} will try to claim #{job}"
-          if !has_been_claimed?(job)  # and if no one has claimed it. XXX SAMMA RAD?
-            set_claim(job, db)
-            save_doc(doc)
-          else
-            coord_set_winner(job, db, doc)
-          end
-        elsif is_winner?(job, db)
-          system(job["do"])
-          set_step(doc)
-          save_doc(doc)
-        end
+        claim_or_work(job, db, doc)
       elsif my_job?(job, db)
         system(job["do"])
         set_step(doc)
@@ -48,10 +36,27 @@ def handle_notification(notification, db)
   end
 end
 
+def claim_or_work(job, db, doc)
+  if !has_winner?(job)          # if no winner is selected
+    puts "#{db} will try to claim #{job}"
+    if !has_been_claimed?(job)  # and if no one has claimed it. XXX SAMMA RAD?
+      set_claim(job, db)
+      save_doc(doc)
+    else
+      coord_set_winner(job, db, doc)
+    end
+  elsif is_winner?(job, db)
+    system(job["do"])
+    set_step(doc)
+    save_doc(doc)
+  end 
+end
+
 def save_doc(doc)
   begin
     DB.save_doc(doc)
   rescue RestClient::Conflict
+    puts "Save Conflict, No problem tho, thanks to couchDB<-----------------------"
   end
 end
 

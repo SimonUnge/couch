@@ -2,6 +2,11 @@ LISTENER
 
 Plocka ut job-owner innan, istället för flera gånger?
 
+Om coord är inne i ett jobb så stoppar det alla andra noder. Skall coord vara en separat process?
+
+Nu blir det 3 uppdateringar per steg om det är så att jobb-steget är "any". Möjlig optimering: ha kontakt med huvuddatabasen
+om linan är upp, och hämta winnaren där. Dock inte så som jag tänker lösa det hela.
+
 Ett doc kommer in till vanlig nod X (Ej supervisor):
 
 får X köra job[step]?
