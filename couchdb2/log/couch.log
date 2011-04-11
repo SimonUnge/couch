@@ -22767,3 +22767,21 @@
 
 [Mon, 11 Apr 2011 14:12:40 GMT] [info] [<0.137.0>] 127.0.0.1 - - 'POST' /_replicate 404
 
+[Mon, 11 Apr 2011 14:16:32 GMT] [info] [<0.387.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Mon, 11 Apr 2011 14:16:32 GMT] [info] [<0.153.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Mon, 11 Apr 2011 14:16:32 GMT] [info] [<0.386.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?limit=11 200
+
+[Mon, 11 Apr 2011 14:16:32 GMT] [info] [<0.386.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 11 Apr 2011 14:16:32 GMT] [info] [<0.153.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 11 Apr 2011 14:16:32 GMT] [info] [<0.387.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Mon, 11 Apr 2011 14:16:35 GMT] [info] [<0.117.0>] Starting compaction for db "reg_a"
+
+[Mon, 11 Apr 2011 14:16:35 GMT] [info] [<0.387.0>] 127.0.0.1 - - 'POST' /reg_a/_compact 202
+
+[Mon, 11 Apr 2011 14:16:35 GMT] [info] [<0.117.0>] Compaction for db "reg_a" completed.
+

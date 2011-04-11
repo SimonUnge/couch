@@ -1,3 +1,5 @@
 *.ini
 *.sh
-/couchdb*/*.*
+/couchdb1/
+/couchdb2/
+/couchdb3/
