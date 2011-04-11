@@ -28,7 +28,7 @@ def handle_notification(notification, db)
             set_claim(job, db)
             save_doc(doc)
           else
-            coord_set_winner(job, db)
+            coord_set_winner(job, db, doc)
           end
         elsif is_winner?(job, db)
           system(job["do"])
@@ -162,10 +162,11 @@ def set_step(doc)
   doc["step"] += 1
 end
 
-def coord_set_winner(job,db)
+def coord_set_winner(job, db, doc)
   coordinator = "global_node"
   if db == coordinator
     job["winner"] = job["claimed_by"]
+    save_doc(doc)
   end
 end
 
