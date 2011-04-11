@@ -13477,3 +13477,1405 @@
 
 [Fri, 08 Apr 2011 13:59:13 GMT] [info] [<0.3970.0>] 172.16.1.183 - - 'PUT' /reg_a/_local%2F51fb9900a6357d502161469748f74e7e 201
 
+[Fri, 08 Apr 2011 14:36:58 GMT] [info] [<0.3972.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Fri, 08 Apr 2011 14:36:58 GMT] [info] [<0.3972.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?limit=11 200
+
+[Fri, 08 Apr 2011 14:36:58 GMT] [info] [<0.6238.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Fri, 08 Apr 2011 14:36:58 GMT] [info] [<0.6238.0>] 127.0.0.1 - - 'GET' / 200
+
+[Fri, 08 Apr 2011 14:36:58 GMT] [info] [<0.6239.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Fri, 08 Apr 2011 14:36:58 GMT] [info] [<0.3972.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Fri, 08 Apr 2011 14:36:59 GMT] [info] [<0.3972.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Fri, 08 Apr 2011 14:36:59 GMT] [info] [<0.3972.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Fri, 08 Apr 2011 14:36:59 GMT] [info] [<0.6239.0>] 127.0.0.1 - - 'GET' / 200
+
+[Fri, 08 Apr 2011 14:36:59 GMT] [info] [<0.6238.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Fri, 08 Apr 2011 14:36:59 GMT] [info] [<0.6239.0>] 127.0.0.1 - - 'GET' /reg_a/ 200
+
+[Fri, 08 Apr 2011 14:37:00 GMT] [info] [<0.6239.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Fri, 08 Apr 2011 14:37:00 GMT] [info] [<0.6238.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Fri, 08 Apr 2011 14:37:00 GMT] [info] [<0.6239.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?limit=11 304
+
+[Fri, 08 Apr 2011 14:37:01 GMT] [info] [<0.6238.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Fri, 08 Apr 2011 14:37:01 GMT] [info] [<0.6239.0>] 127.0.0.1 - - 'GET' / 200
+
+[Fri, 08 Apr 2011 14:37:01 GMT] [info] [<0.6239.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.292.0>] ** Generic server <0.292.0> terminating 
+** Last message in was {ibrowse_async_response,
+                           {1302,268136,28252},
+                           {error,connection_closed}}
+** When Server state == {state,nil,nil,
+                            [<0.285.0>,
+                             {http_db,
+                                 "http://172.16.1.183:5001/global_node/",[],
+                                 "_changes",
+                                 [{"User-Agent","CouchDB/1.0.2"},
+                                  {"Accept","application/json"}],
+                                 [{"style",all_docs},
+                                  {"heartbeat",10000},
+                                  {"since",943},
+                                  {"feed",continuous}],
+                                 get,nil,
+                                 [{stream_to,{<0.292.0>,once}},
+                                  {response_format,binary}],
+                                 10,500,<0.293.0>},
+                             943,
+                             [{<<"source">>,
+                               <<"http://172.16.1.183:5001/global_node">>},
+                              {<<"target">>,<<"reg_a">>},
+                              {<<"continuous">>,true}]],
+                            944,<0.293.0>,
+                            {1302,268136,28252},
+                            false,0,<<>>,
+                            {<0.295.0>,#Ref<0.0.0.25615>},
+                            {[],[]}}
+** Reason for termination == 
+** {error,connection_closed}
+
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.292.0>] {error_report,<0.30.0>,
+              {<0.292.0>,crash_report,
+               [[{initial_call,{couch_rep_changes_feed,init,['Argument__1']}},
+                 {pid,<0.292.0>},
+                 {registered_name,[]},
+                 {error_info,{exit,{error,connection_closed},
+                                   [{gen_server,terminate,6},
+                                    {proc_lib,init_p_do_apply,3}]}},
+                 {ancestors,[<0.285.0>,couch_rep_sup,couch_primary_services,
+                             couch_server_sup,<0.31.0>]},
+                 {messages,[]},
+                 {links,[<0.285.0>]},
+                 {dictionary,[{timeout,{1302273453133276,#Ref<0.0.0.35639>}}]},
+                 {trap_exit,true},
+                 {status,running},
+                 {heap_size,987},
+                 {stack_size,24},
+                 {reductions,69169}],
+                []]}}
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.285.0>] ** Generic server <0.285.0> terminating 
+** Last message in was {'EXIT',<0.292.0>,{error,connection_closed}}
+** When Server state == {state,<0.292.0>,<0.294.0>,<0.296.0>,<0.298.0>,
+                            {http_db,"http://172.16.1.183:5001/global_node/",
+                                [],[],
+                                [{"User-Agent","CouchDB/1.0.2"},
+                                 {"Accept","application/json"},
+                                 {"Accept-Encoding","gzip"}],
+                                [],get,nil,
+                                [{response_format,binary},
+                                 {inactivity_timeout,30000}],
+                                10,500,nil},
+                            {db,<0.151.0>,<0.152.0>,nil,
+                                <<"1302268012498916">>,<0.149.0>,<0.153.0>,
+                                {db_header,5,1026,0,
+                                    {2348452,{1,8}},
+                                    {2348550,9},
+                                    {2310238,[]},
+                                    0,nil,nil,1000},
+                                1026,
+                                {btree,<0.149.0>,
+                                    {2348452,{1,8}},
+                                    #Fun<couch_db_updater.7.10053969>,
+                                    #Fun<couch_db_updater.8.35220795>,
+                                    #Fun<couch_btree.5.124754102>,
+                                    #Fun<couch_db_updater.9.107593676>},
+                                {btree,<0.149.0>,
+                                    {2348550,9},
+                                    #Fun<couch_db_updater.10.30996817>,
+                                    #Fun<couch_db_updater.11.96515267>,
+                                    #Fun<couch_btree.5.124754102>,
+                                    #Fun<couch_db_updater.12.117826253>},
+                                {btree,<0.149.0>,
+                                    {2310238,[]},
+                                    #Fun<couch_btree.0.83553141>,
+                                    #Fun<couch_btree.1.30790806>,
+                                    #Fun<couch_btree.2.124754102>,nil},
+                                1026,<<"reg_a">>,
+                                "/Users/simonunge/Programming/couchdb/couchdb2/data/reg_a.couch",
+                                [],[],nil,
+                                {user_ctx,null,
+                                    [<<"_admin">>],
+                                    <<"{couch_httpd_auth, default_authentication_handler}">>},
+                                nil,1000,
+                                [before_header,after_header,on_file_open],
+                                false},
+                            true,false,
+                            ["99b39797e07f4c0a05b218a7aca4863c",
+                             {[{<<"source">>,
+                                <<"http://172.16.1.183:5001/global_node">>},
+                               {<<"target">>,<<"reg_a">>},
+                               {<<"continuous">>,true}]},
+                             {user_ctx,null,
+                                 [<<"_admin">>],
+                                 <<"{couch_httpd_auth, default_authentication_handler}">>}],
+                            nil,943,
+                            [{[{<<"session_id">>,
+                                <<"12e89e18401a780ff7136f9f860d205a">>},
+                               {<<"start_time">>,
+                                <<"Fri, 08 Apr 2011 13:04:58 GMT">>},
+                               {<<"end_time">>,
+                                <<"Fri, 08 Apr 2011 13:05:03 GMT">>},
+                               {<<"start_last_seq">>,940},
+                               {<<"end_last_seq">>,943},
+                               {<<"recorded_seq">>,943},
+                               {<<"missing_checked">>,0},
+                               {<<"missing_found">>,1},
+                               {<<"docs_read">>,2},
+                               {<<"docs_written">>,2},
+                               {<<"doc_write_failures">>,0}]},
+                             {[{<<"session_id">>,
+                                <<"4096d52243968f42290830914adbae26">>},
+                               {<<"start_time">>,
+                                <<"Fri, 08 Apr 2011 11:17:35 GMT">>},
+                               {<<"end_time">>,
+                                <<"Fri, 08 Apr 2011 12:58:55 GMT">>},
+                               {<<"start_last_seq">>,555},
+                               {<<"end_last_seq">>,940},
+                               {<<"recorded_seq">>,940},
+                               {<<"missing_checked">>,0},
+                               {<<"missing_found">>,385},
+                               {<<"docs_read">>,385},
+                               {<<"docs_written">>,385},
+                               {<<"doc_write_failures">>,0}]},
+                             {[{<<"session_id">>,
+                                <<"93b50f91787e5ce64f205b2832372b2b">>},
+                               {<<"start_time">>,
+                                <<"Fri, 08 Apr 2011 11:05:36 GMT">>},
+                               {<<"end_time">>,
+                                <<"Fri, 08 Apr 2011 11:10:52 GMT">>},
+                               {<<"start_last_seq">>,56},
+                               {<<"end_last_seq">>,555},
+                               {<<"recorded_seq">>,555},
+                               {<<"missing_checked">>,0},
+                               {<<"missing_found">>,499},
+                               {<<"docs_read">>,499},
+                               {<<"docs_written">>,499},
+                               {<<"doc_write_failures">>,0}]},
+                             {[{<<"session_id">>,
+                                <<"c493602f6ed272a0d1f68c7678103d5e">>},
+                               {<<"start_time">>,
+                                <<"Fri, 08 Apr 2011 07:40:28 GMT">>},
+                               {<<"end_time">>,
+                                <<"Fri, 08 Apr 2011 09:41:27 GMT">>},
+                               {<<"start_last_seq">>,0},
+                               {<<"end_last_seq">>,56},
+                               {<<"recorded_seq">>,56},
+                               {<<"missing_checked">>,0},
+                               {<<"missing_found">>,15},
+                               {<<"docs_read">>,15},
+                               {<<"docs_written">>,15},
+                               {<<"doc_write_failures">>,0}]}],
+                            <<"22e8c024bbd5111e42b764eae37be9d2">>,
+                            {doc,
+                                <<"_local/99b39797e07f4c0a05b218a7aca4863c">>,
+                                {0,[<<"102">>]},
+                                {[{<<"session_id">>,
+                                   <<"12e89e18401a780ff7136f9f860d205a">>},
+                                  {<<"source_last_seq">>,943},
+                                  {<<"history">>,
+                                   [{[{<<"session_id">>,
+                                       <<"12e89e18401a780ff7136f9f860d205a">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 13:04:58 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 13:05:03 GMT">>},
+                                      {<<"start_last_seq">>,940},
+                                      {<<"end_last_seq">>,943},
+                                      {<<"recorded_seq">>,943},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,1},
+                                      {<<"docs_read">>,2},
+                                      {<<"docs_written">>,2},
+                                      {<<"doc_write_failures">>,0}]},
+                                    {[{<<"session_id">>,
+                                       <<"4096d52243968f42290830914adbae26">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 11:17:35 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 12:58:55 GMT">>},
+                                      {<<"start_last_seq">>,555},
+                                      {<<"end_last_seq">>,940},
+                                      {<<"recorded_seq">>,940},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,385},
+                                      {<<"docs_read">>,385},
+                                      {<<"docs_written">>,385},
+                                      {<<"doc_write_failures">>,0}]},
+                                    {[{<<"session_id">>,
+                                       <<"93b50f91787e5ce64f205b2832372b2b">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 11:05:36 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 11:10:52 GMT">>},
+                                      {<<"start_last_seq">>,56},
+                                      {<<"end_last_seq">>,555},
+                                      {<<"recorded_seq">>,555},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,499},
+                                      {<<"docs_read">>,499},
+                                      {<<"docs_written">>,499},
+                                      {<<"doc_write_failures">>,0}]},
+                                    {[{<<"session_id">>,
+                                       <<"c493602f6ed272a0d1f68c7678103d5e">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 07:40:28 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 09:41:27 GMT">>},
+                                      {<<"start_last_seq">>,0},
+                                      {<<"end_last_seq">>,56},
+                                      {<<"recorded_seq">>,56},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,15},
+                                      {<<"docs_read">>,15},
+                                      {<<"docs_written">>,15},
+                                      {<<"doc_write_failures">>,0}]}]}]},
+                                [],false,[]},
+                            {doc,
+                                <<"_local/99b39797e07f4c0a05b218a7aca4863c">>,
+                                {0,[<<"102">>]},
+                                {[{<<"session_id">>,
+                                   <<"12e89e18401a780ff7136f9f860d205a">>},
+                                  {<<"source_last_seq">>,943},
+                                  {<<"history">>,
+                                   [{[{<<"session_id">>,
+                                       <<"12e89e18401a780ff7136f9f860d205a">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 13:04:58 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 13:05:03 GMT">>},
+                                      {<<"start_last_seq">>,940},
+                                      {<<"end_last_seq">>,943},
+                                      {<<"recorded_seq">>,943},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,1},
+                                      {<<"docs_read">>,2},
+                                      {<<"docs_written">>,2},
+                                      {<<"doc_write_failures">>,0}]},
+                                    {[{<<"session_id">>,
+                                       <<"4096d52243968f42290830914adbae26">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 11:17:35 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 12:58:55 GMT">>},
+                                      {<<"start_last_seq">>,555},
+                                      {<<"end_last_seq">>,940},
+                                      {<<"recorded_seq">>,940},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,385},
+                                      {<<"docs_read">>,385},
+                                      {<<"docs_written">>,385},
+                                      {<<"doc_write_failures">>,0}]},
+                                    {[{<<"session_id">>,
+                                       <<"93b50f91787e5ce64f205b2832372b2b">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 11:05:36 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 11:10:52 GMT">>},
+                                      {<<"start_last_seq">>,56},
+                                      {<<"end_last_seq">>,555},
+                                      {<<"recorded_seq">>,555},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,499},
+                                      {<<"docs_read">>,499},
+                                      {<<"docs_written">>,499},
+                                      {<<"doc_write_failures">>,0}]},
+                                    {[{<<"session_id">>,
+                                       <<"c493602f6ed272a0d1f68c7678103d5e">>},
+                                      {<<"start_time">>,
+                                       <<"Fri, 08 Apr 2011 07:40:28 GMT">>},
+                                      {<<"end_time">>,
+                                       <<"Fri, 08 Apr 2011 09:41:27 GMT">>},
+                                      {<<"start_last_seq">>,0},
+                                      {<<"end_last_seq">>,56},
+                                      {<<"recorded_seq">>,56},
+                                      {<<"missing_checked">>,0},
+                                      {<<"missing_found">>,15},
+                                      {<<"docs_read">>,15},
+                                      {<<"docs_written">>,15},
+                                      {<<"doc_write_failures">>,0}]}]}]},
+                                [],false,[]},
+                            "Fri, 08 Apr 2011 13:08:56 GMT",
+                            <<"1302267900533155">>,<<"1302268012498916">>,
+                            {[{<<"session_id">>,
+                               <<"22e8c024bbd5111e42b764eae37be9d2">>},
+                              {<<"source_last_seq">>,1039},
+                              {<<"history">>,
+                               [{[{<<"session_id">>,
+                                   <<"22e8c024bbd5111e42b764eae37be9d2">>},
+                                  {<<"start_time">>,
+                                   <<"Fri, 08 Apr 2011 13:08:56 GMT">>},
+                                  {<<"end_time">>,
+                                   <<"Fri, 08 Apr 2011 13:59:12 GMT">>},
+                                  {<<"start_last_seq">>,943},
+                                  {<<"end_last_seq">>,1039},
+                                  {<<"recorded_seq">>,1039},
+                                  {<<"missing_checked">>,0},
+                                  {<<"missing_found">>,95},
+                                  {<<"docs_read">>,95},
+                                  {<<"docs_written">>,95},
+                                  {<<"doc_write_failures">>,0}]},
+                                {[{<<"session_id">>,
+                                   <<"12e89e18401a780ff7136f9f860d205a">>},
+                                  {<<"start_time">>,
+                                   <<"Fri, 08 Apr 2011 13:04:58 GMT">>},
+                                  {<<"end_time">>,
+                                   <<"Fri, 08 Apr 2011 13:05:03 GMT">>},
+                                  {<<"start_last_seq">>,940},
+                                  {<<"end_last_seq">>,943},
+                                  {<<"recorded_seq">>,943},
+                                  {<<"missing_checked">>,0},
+                                  {<<"missing_found">>,1},
+                                  {<<"docs_read">>,2},
+                                  {<<"docs_written">>,2},
+                                  {<<"doc_write_failures">>,0}]},
+                                {[{<<"session_id">>,
+                                   <<"4096d52243968f42290830914adbae26">>},
+                                  {<<"start_time">>,
+                                   <<"Fri, 08 Apr 2011 11:17:35 GMT">>},
+                                  {<<"end_time">>,
+                                   <<"Fri, 08 Apr 2011 12:58:55 GMT">>},
+                                  {<<"start_last_seq">>,555},
+                                  {<<"end_last_seq">>,940},
+                                  {<<"recorded_seq">>,940},
+                                  {<<"missing_checked">>,0},
+                                  {<<"missing_found">>,385},
+                                  {<<"docs_read">>,385},
+                                  {<<"docs_written">>,385},
+                                  {<<"doc_write_failures">>,0}]},
+                                {[{<<"session_id">>,
+                                   <<"93b50f91787e5ce64f205b2832372b2b">>},
+                                  {<<"start_time">>,
+                                   <<"Fri, 08 Apr 2011 11:05:36 GMT">>},
+                                  {<<"end_time">>,
+                                   <<"Fri, 08 Apr 2011 11:10:52 GMT">>},
+                                  {<<"start_last_seq">>,56},
+                                  {<<"end_last_seq">>,555},
+                                  {<<"recorded_seq">>,555},
+                                  {<<"missing_checked">>,0},
+                                  {<<"missing_found">>,499},
+                                  {<<"docs_read">>,499},
+                                  {<<"docs_written">>,499},
+                                  {<<"doc_write_failures">>,0}]},
+                                {[{<<"session_id">>,
+                                   <<"c493602f6ed272a0d1f68c7678103d5e">>},
+                                  {<<"start_time">>,
+                                   <<"Fri, 08 Apr 2011 07:40:28 GMT">>},
+                                  {<<"end_time">>,
+                                   <<"Fri, 08 Apr 2011 09:41:27 GMT">>},
+                                  {<<"start_last_seq">>,0},
+                                  {<<"end_last_seq">>,56},
+                                  {<<"recorded_seq">>,56},
+                                  {<<"missing_checked">>,0},
+                                  {<<"missing_found">>,15},
+                                  {<<"docs_read">>,15},
+                                  {<<"docs_written">>,15},
+                                  {<<"doc_write_failures">>,0}]}]}]},
+                            [],false,1039,49202,nil,nil,<0.299.0>}
+** Reason for termination == 
+** {error,connection_closed}
+
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.285.0>] {error_report,<0.30.0>,
+    {<0.285.0>,crash_report,
+     [[{initial_call,{couch_rep,init,['Argument__1']}},
+       {pid,<0.285.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {error,connection_closed},
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [couch_rep_sup,couch_primary_services,couch_server_sup,<0.31.0>]},
+       {messages,[]},
+       {links,[<0.296.0>,<0.299.0>,<0.298.0>,<0.81.0>,<0.294.0>]},
+       {dictionary,[{task_status_update,{{1302,271151,962318},0}}]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,6765},
+       {stack_size,24},
+       {reductions,129309}],
+      [{neighbour,
+           [{pid,<0.298.0>},
+            {registered_name,[]},
+            {initial_call,{erlang,apply,2}},
+            {current_function,{gen,do_call,4}},
+            {ancestors,[]},
+            {messages,[]},
+            {links,[<0.285.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,waiting},
+            {heap_size,28657},
+            {stack_size,20},
+            {reductions,47541}]},
+       {neighbour,
+           [{pid,<0.299.0>},
+            {registered_name,[]},
+            {initial_call,{couch_event_sup,init,['Argument__1']}},
+            {current_function,{gen_server,loop,6}},
+            {ancestors,
+                [<0.285.0>,couch_rep_sup,couch_primary_services,
+                 couch_server_sup,<0.31.0>]},
+            {messages,[]},
+            {links,[<0.285.0>,<0.84.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,waiting},
+            {heap_size,233},
+            {stack_size,9},
+            {reductions,32}]}]]}}
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.294.0>] ** Generic server <0.294.0> terminating 
+** Last message in was {'EXIT',<0.285.0>,{error,connection_closed}}
+** When Server state == {state,<0.295.0>,nil,<0.285.0>,false,0,
+                               {<0.297.0>,#Ref<0.0.0.25619>},
+                               {[],[]},
+                               1039,1039,1039}
+** Reason for termination == 
+** {error,connection_closed}
+
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.294.0>] {error_report,<0.30.0>,
+              {<0.294.0>,crash_report,
+               [[{initial_call,{couch_rep_missing_revs,init,['Argument__1']}},
+                 {pid,<0.294.0>},
+                 {registered_name,[]},
+                 {error_info,{exit,{error,connection_closed},
+                                   [{gen_server,terminate,6},
+                                    {proc_lib,init_p_do_apply,3}]}},
+                 {ancestors,[<0.285.0>,couch_rep_sup,couch_primary_services,
+                             couch_server_sup,<0.31.0>]},
+                 {messages,[]},
+                 {links,[<0.295.0>]},
+                 {dictionary,[]},
+                 {trap_exit,true},
+                 {status,running},
+                 {heap_size,1597},
+                 {stack_size,24},
+                 {reductions,2760}],
+                []]}}
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.81.0>] {error_report,<0.30.0>,
+              {<0.81.0>,supervisor_report,
+               [{supervisor,{local,couch_rep_sup}},
+                {errorContext,child_terminated},
+                {reason,{error,connection_closed}},
+                {offender,[{pid,<0.285.0>},
+                           {name,"99b39797e07f4c0a05b218a7aca4863c+continuous"},
+                           {mfargs,{gen_server,start_link,undefined}},
+                           {restart_type,temporary},
+                           {shutdown,1},
+                           {child_type,worker}]}]}}
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.296.0>] ** Generic server <0.296.0> terminating 
+** Last message in was {'EXIT',<0.285.0>,{error,connection_closed}}
+** When Server state == {state,<0.285.0>,
+                            {http_db,"http://172.16.1.183:5001/global_node/",
+                                [],[],
+                                [{"User-Agent","CouchDB/1.0.2"},
+                                 {"Accept","application/json"},
+                                 {"Accept-Encoding","gzip"}],
+                                [],get,nil,
+                                [{response_format,binary},
+                                 {inactivity_timeout,30000}],
+                                10,500,nil},
+                            <0.294.0>,<0.297.0>,[],0,
+                            {[],[]},
+                            {<0.298.0>,#Ref<0.0.0.25672>},
+                            false,0,nil,[],
+                            [1039]}
+** Reason for termination == 
+** {error,connection_closed}
+
+
+[Fri, 08 Apr 2011 14:37:05 GMT] [error] [<0.296.0>] {error_report,<0.30.0>,
+    {<0.296.0>,crash_report,
+     [[{initial_call,{couch_rep_reader,init,['Argument__1']}},
+       {pid,<0.296.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {error,connection_closed},
+               [{gen_server,terminate,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [<0.285.0>,couch_rep_sup,couch_primary_services,couch_server_sup,
+            <0.31.0>]},
+       {messages,[]},
+       {links,[<0.297.0>]},
+       {dictionary,[]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,28657},
+       {stack_size,24},
+       {reductions,22840}],
+      [{neighbour,
+           [{pid,<0.297.0>},
+            {registered_name,[]},
+            {initial_call,{erlang,apply,2}},
+            {current_function,{gen,do_call,4}},
+            {ancestors,[]},
+            {messages,
+                [{'DOWN',#Ref<0.0.0.25619>,process,<0.294.0>,
+                     {error,connection_closed}}]},
+            {links,[<0.296.0>]},
+            {dictionary,[]},
+            {trap_exit,false},
+            {status,runnable},
+            {heap_size,610},
+            {stack_size,20},
+            {reductions,2431}]}]]}}
+
+[Mon, 11 Apr 2011 07:37:42 GMT] [info] [<0.31.0>] Apache CouchDB has started on http://0.0.0.0:5002/
+
+[Mon, 11 Apr 2011 07:39:23 GMT] [error] [<0.177.0>] {error_report,<0.30.0>,
+    {<0.177.0>,crash_report,
+     [[{initial_call,{couch_rep,init,['Argument__1']}},
+       {pid,<0.177.0>},
+       {registered_name,[]},
+       {error_info,
+           {exit,
+               {db_not_found,<<"http://172.16.1.183:5001/global_node/">>},
+               [{gen_server,init_it,6},{proc_lib,init_p_do_apply,3}]}},
+       {ancestors,
+           [couch_rep_sup,couch_primary_services,couch_server_sup,<0.31.0>]},
+       {messages,[]},
+       {links,[<0.81.0>]},
+       {dictionary,[]},
+       {trap_exit,true},
+       {status,running},
+       {heap_size,2584},
+       {stack_size,24},
+       {reductions,623}],
+      []]}}
+
+[Mon, 11 Apr 2011 07:39:23 GMT] [info] [<0.103.0>] 127.0.0.1 - - 'POST' /_replicate 404
+
+[Mon, 11 Apr 2011 07:41:06 GMT] [info] [<0.176.0>] starting new replication "2ae07494fa9c1461305065cdbd320b69+continuous" at <0.316.0>
+
+[Mon, 11 Apr 2011 07:41:06 GMT] [info] [<0.176.0>] 127.0.0.1 - - 'POST' /_replicate 202
+
+[Mon, 11 Apr 2011 07:41:08 GMT] [info] [<0.315.0>] 172.16.1.194 - - 'HEAD' /reg_a/ 200
+
+[Mon, 11 Apr 2011 07:41:08 GMT] [info] [<0.338.0>] 172.16.1.194 - - 'GET' /reg_a/ 200
+
+[Mon, 11 Apr 2011 07:41:08 GMT] [info] [<0.339.0>] 172.16.1.194 - - 'GET' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 404
+
+[Mon, 11 Apr 2011 07:41:08 GMT] [info] [<0.340.0>] 172.16.1.194 - - 'GET' /reg_a/_changes?style=all_docs&heartbeat=10000&since=0&feed=continuous 200
+
+[Mon, 11 Apr 2011 07:41:11 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1039
+
+[Mon, 11 Apr 2011 07:41:13 GMT] [info] [<0.341.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1121 201
+
+[Mon, 11 Apr 2011 07:41:13 GMT] [info] [<0.353.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 07:44:01 GMT] [info] [<0.354.0>] 127.0.0.1 - - 'GET' /reg_a/_changes?feed=continuous&heartbeat=1000 200
+
+[Mon, 11 Apr 2011 07:44:01 GMT] [info] [<0.523.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 07:44:01 GMT] [info] [<0.526.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 07:44:54 GMT] [info] [<0.527.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 07:44:54 GMT] [info] [<0.583.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1116-b1b027943372d1318ec2580369506395"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 07:44:58 GMT] [info] [<0.584.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 07:44:58 GMT] [info] [<0.592.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1117-0be5e7ef667c247abb2b2b287b22a7c9"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 07:44:59 GMT] [info] [<0.593.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1123 201
+
+[Mon, 11 Apr 2011 07:44:59 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1041
+
+[Mon, 11 Apr 2011 07:44:59 GMT] [info] [<0.598.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 07:45:02 GMT] [info] [<0.600.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 07:45:02 GMT] [info] [<0.604.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 07:45:02 GMT] [info] [<0.605.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1118-690f7f70b9cf6081262ec2edffd7938e"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 07:45:06 GMT] [info] [<0.606.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 07:45:06 GMT] [info] [<0.613.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 07:45:06 GMT] [info] [<0.614.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1119-d50573ea24ef76413a049f1629f20ad4"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 07:45:08 GMT] [info] [<0.615.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1125 201
+
+[Mon, 11 Apr 2011 07:45:08 GMT] [info] [<0.619.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 07:45:08 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1043
+
+[Mon, 11 Apr 2011 07:45:11 GMT] [info] [<0.620.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 07:45:11 GMT] [info] [<0.630.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1120-8a79dedfb174ee452c7aafea3fcee984"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 07:45:15 GMT] [info] [<0.631.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 07:45:15 GMT] [info] [<0.638.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1121-b18315b39b44a27ea6e4633c1865c636"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 07:45:16 GMT] [info] [<0.639.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1127 201
+
+[Mon, 11 Apr 2011 07:45:16 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1045
+
+[Mon, 11 Apr 2011 07:45:16 GMT] [info] [<0.644.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 07:48:48 GMT] [info] [<0.646.0>] 127.0.0.1 - - 'GET' /reg_node/doc 404
+
+[Mon, 11 Apr 2011 07:48:59 GMT] [info] [<0.859.0>] 127.0.0.1 - - 'GET' /reg_node/ 404
+
+[Mon, 11 Apr 2011 07:49:30 GMT] [info] [<0.874.0>] 127.0.0.1 - - 'GET' /_utils 301
+
+[Mon, 11 Apr 2011 07:49:30 GMT] [info] [<0.915.0>] 127.0.0.1 - - 'GET' /_all_dbs 200
+
+[Mon, 11 Apr 2011 07:49:30 GMT] [info] [<0.910.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 11 Apr 2011 07:49:30 GMT] [info] [<0.911.0>] 127.0.0.1 - - 'GET' /reg_a/ 200
+
+[Mon, 11 Apr 2011 07:49:30 GMT] [info] [<0.912.0>] 127.0.0.1 - - 'GET' /_users/ 200
+
+[Mon, 11 Apr 2011 07:49:30 GMT] [info] [<0.914.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 11 Apr 2011 07:49:32 GMT] [info] [<0.914.0>] 127.0.0.1 - - 'GET' /_config/query_servers/ 200
+
+[Mon, 11 Apr 2011 07:49:32 GMT] [info] [<0.915.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?startkey=%22_design%2F%22&endkey=%22_design0%22&include_docs=true 200
+
+[Mon, 11 Apr 2011 07:49:32 GMT] [info] [<0.909.0>] 127.0.0.1 - - 'GET' /reg_a/_all_docs?limit=11 200
+
+[Mon, 11 Apr 2011 07:49:32 GMT] [info] [<0.915.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 11 Apr 2011 07:49:32 GMT] [info] [<0.914.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 11 Apr 2011 07:49:32 GMT] [info] [<0.911.0>] 127.0.0.1 - - 'GET' /_config/native_query_servers/ 200
+
+[Mon, 11 Apr 2011 07:49:37 GMT] [info] [<0.914.0>] 127.0.0.1 - - 'GET' /_session 200
+
+[Mon, 11 Apr 2011 07:49:37 GMT] [info] [<0.911.0>] 127.0.0.1 - - 'GET' / 200
+
+[Mon, 11 Apr 2011 07:49:37 GMT] [info] [<0.915.0>] 127.0.0.1 - - 'GET' /reg_a/doc?revs_info=true 200
+
+[Mon, 11 Apr 2011 07:49:53 GMT] [info] [<0.916.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:20:17 GMT] [info] [<0.940.0>] 127.0.0.1 - - 'GET' /reg_a/_changes?feed=continuous&heartbeat=1000 200
+
+[Mon, 11 Apr 2011 08:20:17 GMT] [info] [<0.2765.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:20:17 GMT] [info] [<0.2768.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:20:39 GMT] [info] [<0.2769.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:20:39 GMT] [info] [<0.2794.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1122-bb42d0063ce846db05155873e2b0b549"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:20:43 GMT] [info] [<0.2795.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:20:43 GMT] [info] [<0.2802.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1123-69dc60bace0efe46a6b0929bc2a33c26"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:20:44 GMT] [info] [<0.2803.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1129 201
+
+[Mon, 11 Apr 2011 08:20:44 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1047
+
+[Mon, 11 Apr 2011 08:20:44 GMT] [info] [<0.2808.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:20:47 GMT] [info] [<0.2810.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:20:47 GMT] [info] [<0.2814.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:20:47 GMT] [info] [<0.2815.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1124-d3fb3d0f3f0416ac2c3732c74fb89015"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:20:51 GMT] [info] [<0.2816.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:20:51 GMT] [info] [<0.2823.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:20:51 GMT] [info] [<0.2824.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1125-df5a139c883d79dfbdbd379bef302084"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:20:52 GMT] [info] [<0.2825.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1131 201
+
+[Mon, 11 Apr 2011 08:20:52 GMT] [info] [<0.2829.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:20:53 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1049
+
+[Mon, 11 Apr 2011 08:20:56 GMT] [info] [<0.2830.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:20:56 GMT] [info] [<0.2841.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1126-47397d33bd94b8dfdede6c348e2ff409"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:21:00 GMT] [info] [<0.2842.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:21:00 GMT] [info] [<0.2849.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1127-c7758a981139140d12d9b104b737e682"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:21:01 GMT] [info] [<0.2850.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1133 201
+
+[Mon, 11 Apr 2011 08:21:01 GMT] [info] [<0.2855.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:21:01 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1051
+
+[Mon, 11 Apr 2011 08:22:06 GMT] [info] [<0.2856.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:06 GMT] [info] [<0.2925.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1128-77e15f19c66d77daef6ff9d9643ace34"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:11 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1052
+
+[Mon, 11 Apr 2011 08:22:11 GMT] [info] [<0.2926.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1134 201
+
+[Mon, 11 Apr 2011 08:22:11 GMT] [info] [<0.2936.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:22:14 GMT] [info] [<0.2937.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:22:14 GMT] [info] [<0.2941.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:14 GMT] [info] [<0.2942.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1129-fa49c8c478ecc24ab111e0fd1f2b57f2"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:18 GMT] [info] [<0.2943.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:22:18 GMT] [info] [<0.2950.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:18 GMT] [info] [<0.2952.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1130-ca02c8a7ab2c63d7c2b642181240ec5e"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:18 GMT] [info] [<0.2951.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:22:18 GMT] [info] [<0.2953.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:18 GMT] [info] [<0.2954.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1131-94c4b4bc898a5441135745d0e9c8cf89"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:19 GMT] [info] [<0.2955.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:19 GMT] [info] [<0.2963.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1131-9a7a286015140aa4665c7564e02799c6"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:19 GMT] [info] [<0.2964.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1138 201
+
+[Mon, 11 Apr 2011 08:22:19 GMT] [info] [<0.2968.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:22:19 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1056
+
+[Mon, 11 Apr 2011 08:22:40 GMT] [info] [<0.2969.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:40 GMT] [info] [<0.2994.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1132-6adc4d3f7eb171390b4207e83b5ce27e"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:44 GMT] [info] [<0.2995.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:44 GMT] [info] [<0.3004.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:22:44 GMT] [info] [<0.3005.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:44 GMT] [info] [<0.3006.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1133-1d8721be05adae01925105974caa52a6"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:44 GMT] [info] [<0.3007.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1134-66917ea817275d2e9ff3faa3a6d35e85"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:44 GMT] [info] [<0.3008.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:44 GMT] [info] [<0.3009.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1134-883c15d9f8b3a93376a27bd2769f8ac3"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:22:45 GMT] [info] [<0.3010.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1142 201
+
+[Mon, 11 Apr 2011 08:22:45 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1060
+
+[Mon, 11 Apr 2011 08:22:45 GMT] [info] [<0.3017.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:22:58 GMT] [info] [<0.3019.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:22:58 GMT] [info] [<0.3035.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1135-07372e07f0a12786dcf44ea523041806"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:23:03 GMT] [info] [<0.3036.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:23:03 GMT] [info] [<0.3044.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1136-82934c9b30211ffc8ea5e3f0cbc28475"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:23:03 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1062
+
+[Mon, 11 Apr 2011 08:23:03 GMT] [info] [<0.3045.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1144 201
+
+[Mon, 11 Apr 2011 08:23:03 GMT] [info] [<0.3050.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:23:51 GMT] [info] [<0.3051.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:23:51 GMT] [info] [<0.3102.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1137-fdf60657069b724be4dcf73f7492684c"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:23:56 GMT] [info] [<0.3103.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:23:56 GMT] [info] [<0.3111.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1138-1f25140c7e9ffb4108cd0bd8404787b6"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:23:57 GMT] [info] [<0.3112.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1146 201
+
+[Mon, 11 Apr 2011 08:23:57 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1064
+
+[Mon, 11 Apr 2011 08:23:57 GMT] [info] [<0.3117.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:24:04 GMT] [info] [<0.3118.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:24:04 GMT] [info] [<0.3127.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:24:04 GMT] [info] [<0.3128.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1139-39352a1057354ef386e4834ced078c97"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:24:08 GMT] [info] [<0.3129.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:24:08 GMT] [info] [<0.3136.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:24:08 GMT] [info] [<0.3137.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1140-519341d8f87c7751ab532e876dce414b"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:24:09 GMT] [info] [<0.3138.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1148 201
+
+[Mon, 11 Apr 2011 08:24:09 GMT] [info] [<0.3142.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:24:09 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1066
+
+[Mon, 11 Apr 2011 08:24:13 GMT] [info] [<0.3143.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:24:13 GMT] [info] [<0.3154.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1141-e451d7786814f88410c4462f1026aa57"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:24:17 GMT] [info] [<0.3155.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:24:17 GMT] [info] [<0.3160.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:24:17 GMT] [info] [<0.3161.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1142-aae827257a2bfd5a975703bc87a2a339"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:24:18 GMT] [info] [<0.3162.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1150 201
+
+[Mon, 11 Apr 2011 08:24:18 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1068
+
+[Mon, 11 Apr 2011 08:24:18 GMT] [info] [<0.3169.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:24:47 GMT] [info] [<0.3171.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:24:47 GMT] [info] [<0.3203.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1143-006d085a0a626ee84bbb871567ef0a5f"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:24:52 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1069
+
+[Mon, 11 Apr 2011 08:24:52 GMT] [info] [<0.3204.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1151 201
+
+[Mon, 11 Apr 2011 08:24:52 GMT] [info] [<0.3214.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:24:55 GMT] [info] [<0.3215.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:24:55 GMT] [info] [<0.3219.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:24:55 GMT] [info] [<0.3220.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1144-e9a301b9240f009e33f805cc514859fb"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:25:00 GMT] [info] [<0.3221.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1152 201
+
+[Mon, 11 Apr 2011 08:25:00 GMT] [info] [<0.3229.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:25:00 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1070
+
+[Mon, 11 Apr 2011 08:25:03 GMT] [info] [<0.3230.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:25:03 GMT] [info] [<0.3238.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:25:03 GMT] [info] [<0.3239.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1145-bbbb5e791c146a7343d54eb43bd45812"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:25:07 GMT] [info] [<0.3240.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:25:07 GMT] [info] [<0.3247.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:25:07 GMT] [info] [<0.3248.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1146-bb433b1d5311b6e9b02e973660b338b9"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:25:08 GMT] [info] [<0.3249.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1154 201
+
+[Mon, 11 Apr 2011 08:25:08 GMT] [info] [<0.3253.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:25:08 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1072
+
+[Mon, 11 Apr 2011 08:25:34 GMT] [info] [<0.3254.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:25:34 GMT] [info] [<0.3287.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1147-43f77434ab6028d3efb4f87cac958dcd"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:25:39 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1073
+
+[Mon, 11 Apr 2011 08:25:39 GMT] [info] [<0.3288.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1155 201
+
+[Mon, 11 Apr 2011 08:25:39 GMT] [info] [<0.3298.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:25:42 GMT] [info] [<0.3299.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:25:42 GMT] [info] [<0.3303.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:25:42 GMT] [info] [<0.3304.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1148-2f0d8a8a94980b774c8757e188730063"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:25:47 GMT] [info] [<0.3305.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1156 201
+
+[Mon, 11 Apr 2011 08:25:47 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1074
+
+[Mon, 11 Apr 2011 08:25:47 GMT] [info] [<0.3313.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:25:50 GMT] [info] [<0.3317.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:25:50 GMT] [info] [<0.3322.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:25:50 GMT] [info] [<0.3323.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1149-6f469b1c021817692df31fb08153d3e8"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:25:54 GMT] [info] [<0.3324.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:25:54 GMT] [info] [<0.3331.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:25:54 GMT] [info] [<0.3332.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1150-a0160242b17f3c21d497d50153dee545"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:25:55 GMT] [info] [<0.3333.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1158 201
+
+[Mon, 11 Apr 2011 08:25:55 GMT] [info] [<0.3337.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:25:55 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1076
+
+[Mon, 11 Apr 2011 08:27:17 GMT] [info] [<0.3338.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:27:17 GMT] [info] [<0.3427.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1151-6d6c32aeb242e80cde4e3d1c86954d80"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:27:22 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1077
+
+[Mon, 11 Apr 2011 08:27:22 GMT] [info] [<0.3428.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1159 201
+
+[Mon, 11 Apr 2011 08:27:22 GMT] [info] [<0.3438.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:27:25 GMT] [info] [<0.3439.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:27:25 GMT] [info] [<0.3443.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:27:25 GMT] [info] [<0.3444.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1152-3a7231af30a3f3710c62992333f1a6d3"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:27:30 GMT] [info] [<0.3445.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1160 201
+
+[Mon, 11 Apr 2011 08:27:30 GMT] [info] [<0.3453.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:27:31 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1078
+
+[Mon, 11 Apr 2011 08:27:33 GMT] [info] [<0.3454.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:27:33 GMT] [info] [<0.3462.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:27:33 GMT] [info] [<0.3463.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1153-72e534e676a8c426e5477f148bb77de2"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:27:37 GMT] [info] [<0.3464.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:27:37 GMT] [info] [<0.3471.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:27:37 GMT] [info] [<0.3472.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1154-949d49d92a2db3061bcf52011c0156e7"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:27:39 GMT] [info] [<0.3473.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1162 201
+
+[Mon, 11 Apr 2011 08:27:39 GMT] [info] [<0.3477.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:27:39 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1080
+
+[Mon, 11 Apr 2011 08:28:22 GMT] [info] [<0.3479.0>] 127.0.0.1 - - 'GET' /reg_a/_changes?feed=continuous&heartbeat=1000 200
+
+[Mon, 11 Apr 2011 08:28:22 GMT] [info] [<0.3527.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:28:22 GMT] [info] [<0.3530.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:28:31 GMT] [info] [<0.3531.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:28:31 GMT] [info] [<0.3543.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1155-0296e5430be293eb3e0327c3952a162c"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:28:36 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1081
+
+[Mon, 11 Apr 2011 08:28:36 GMT] [info] [<0.3544.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1163 201
+
+[Mon, 11 Apr 2011 08:28:36 GMT] [info] [<0.3554.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:28:39 GMT] [info] [<0.3555.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:28:39 GMT] [info] [<0.3559.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:28:39 GMT] [info] [<0.3560.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1156-0ac7f2d95c24c2bc1dece44a09fedf75"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:28:44 GMT] [info] [<0.3561.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1164 201
+
+[Mon, 11 Apr 2011 08:28:44 GMT] [info] [<0.3569.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:28:44 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1082
+
+[Mon, 11 Apr 2011 08:28:47 GMT] [info] [<0.3570.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:28:47 GMT] [info] [<0.3578.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:28:47 GMT] [info] [<0.3579.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1157-d17498da4573e93de20623d34c0c2b6c"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:28:51 GMT] [info] [<0.3580.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:28:51 GMT] [info] [<0.3587.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:28:51 GMT] [info] [<0.3588.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1158-93e0c441c4991bd4f6d30b5d2c7cbfe9"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:28:52 GMT] [info] [<0.3589.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1166 201
+
+[Mon, 11 Apr 2011 08:28:52 GMT] [info] [<0.3596.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:28:52 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1084
+
+[Mon, 11 Apr 2011 08:30:44 GMT] [info] [<0.3597.0>] 127.0.0.1 - - 'GET' /reg_a/_changes?feed=continuous&heartbeat=1000 200
+
+[Mon, 11 Apr 2011 08:30:44 GMT] [info] [<0.3711.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:30:44 GMT] [info] [<0.3714.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:31:03 GMT] [info] [<0.3715.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:31:03 GMT] [info] [<0.3737.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1159-d17c4b76ffa5daf50a51ce4cbf4c4b90"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:31:08 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1085
+
+[Mon, 11 Apr 2011 08:31:08 GMT] [info] [<0.3738.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1167 201
+
+[Mon, 11 Apr 2011 08:31:08 GMT] [info] [<0.3748.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:31:15 GMT] [info] [<0.3749.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:31:15 GMT] [info] [<0.3757.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:31:15 GMT] [info] [<0.3758.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1160-ca597345f4813c075985311770024eca"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:31:19 GMT] [info] [<0.3759.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:31:19 GMT] [info] [<0.3768.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1161-eaa727dcbdaa9ea5b69f55024924bfa5"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:31:20 GMT] [info] [<0.3769.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1169 201
+
+[Mon, 11 Apr 2011 08:31:20 GMT] [info] [<0.3771.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:31:20 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1087
+
+[Mon, 11 Apr 2011 08:31:23 GMT] [info] [<0.3775.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:31:23 GMT] [info] [<0.3780.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:31:23 GMT] [info] [<0.3781.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1162-f2d17167cee77eab17b7be93844593d1"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:31:28 GMT] [info] [<0.3782.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1170 201
+
+[Mon, 11 Apr 2011 08:31:28 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1088
+
+[Mon, 11 Apr 2011 08:31:28 GMT] [info] [<0.3793.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:32:57 GMT] [info] [<0.3795.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:32:57 GMT] [info] [<0.3887.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1163-95fff2dca1700e32b1878de5d9693c8e"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:32:59 GMT] [info] [<0.3888.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["24-ef1c49e4f96b55ab947ca5ce6fea9466"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:33:02 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1090
+
+[Mon, 11 Apr 2011 08:33:02 GMT] [info] [<0.3893.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1172 201
+
+[Mon, 11 Apr 2011 08:33:02 GMT] [info] [<0.3901.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:33:09 GMT] [info] [<0.3902.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:33:09 GMT] [info] [<0.3910.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:33:09 GMT] [info] [<0.3911.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:33:09 GMT] [info] [<0.3912.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1164-822006f9faef9b9b359489edfc9f55e2"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:33:14 GMT] [info] [<0.3913.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:33:14 GMT] [info] [<0.3923.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["25-c999364400e7ff0355cbe86fd23223bf"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:33:14 GMT] [info] [<0.3924.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1174 201
+
+[Mon, 11 Apr 2011 08:33:15 GMT] [info] [<0.3925.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:33:15 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1092
+
+[Mon, 11 Apr 2011 08:33:18 GMT] [info] [<0.3926.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1165-a442869dc2eff8de05fdd4dc9ccc3c31"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:33:23 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1093
+
+[Mon, 11 Apr 2011 08:33:23 GMT] [info] [<0.3937.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1175 201
+
+[Mon, 11 Apr 2011 08:33:23 GMT] [info] [<0.3947.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:33:29 GMT] [info] [<0.3948.0>] 127.0.0.1 - - 'PUT' /reg_a/a08559537748557697af11324c000961 201
+
+[Mon, 11 Apr 2011 08:33:29 GMT] [info] [<0.3955.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:33:29 GMT] [info] [<0.3956.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["26-dc660d49453b2d6f610f5e8f7a6f75e9"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:33:33 GMT] [info] [<0.3957.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:33:33 GMT] [info] [<0.3964.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:33:33 GMT] [info] [<0.3965.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1166-4f5f18777b571051792a588e837bfd32"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:33:34 GMT] [info] [<0.3966.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1177 201
+
+[Mon, 11 Apr 2011 08:33:34 GMT] [info] [<0.3970.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:33:34 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1095
+
+[Mon, 11 Apr 2011 08:33:48 GMT] [info] [<0.3974.0>] 127.0.0.1 - - 'PUT' /reg_a/a08559537748557697af11324c000961 201
+
+[Mon, 11 Apr 2011 08:33:48 GMT] [info] [<0.3990.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:33:48 GMT] [info] [<0.3991.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:33:48 GMT] [info] [<0.3992.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["27-23ba82de06484301f6b3aab6493619ef"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:33:53 GMT] [info] [<0.3993.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1178 201
+
+[Mon, 11 Apr 2011 08:33:53 GMT] [info] [<0.4001.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:33:53 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1096
+
+[Mon, 11 Apr 2011 08:34:03 GMT] [info] [<0.4005.0>] 127.0.0.1 - - 'PUT' /reg_a/a08559537748557697af11324c000961 201
+
+[Mon, 11 Apr 2011 08:34:03 GMT] [info] [<0.4017.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:34:03 GMT] [info] [<0.4018.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["28-182018c0d7314b28ee226a21071128c9"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:34:08 GMT] [info] [<0.4019.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1179 201
+
+[Mon, 11 Apr 2011 08:34:08 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1097
+
+[Mon, 11 Apr 2011 08:34:08 GMT] [info] [<0.4030.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:34:18 GMT] [info] [<0.4032.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:34:18 GMT] [info] [<0.4045.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["29-43fdf68e5298704a42d454e1f1cec690"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:34:23 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1098
+
+[Mon, 11 Apr 2011 08:34:23 GMT] [info] [<0.4046.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1180 201
+
+[Mon, 11 Apr 2011 08:34:23 GMT] [info] [<0.4055.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:35:59 GMT] [info] [<0.4057.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:35:59 GMT] [info] [<0.4156.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1167-1b7db25043663c05df813e5eb5022252"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:00 GMT] [info] [<0.4157.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["30-6a3593993093c890f598220c0c874743"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:04 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1100
+
+[Mon, 11 Apr 2011 08:36:04 GMT] [info] [<0.4161.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1182 201
+
+[Mon, 11 Apr 2011 08:36:04 GMT] [info] [<0.4170.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:36:04 GMT] [info] [<0.4171.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["31-545b98d530521a441a320f2b3b7eeaef"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:05 GMT] [info] [<0.4174.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:36:05 GMT] [info] [<0.4176.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:36:05 GMT] [info] [<0.4177.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1168-3a6ed3217b867bb22fb2cf6068e971d8"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:07 GMT] [info] [<0.4178.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1169-735f98a92b70c89a936a4a1f60881a30"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:09 GMT] [info] [<0.4185.0>] 127.0.0.1 - - 'PUT' /reg_a/a08559537748557697af11324c000961 201
+
+[Mon, 11 Apr 2011 08:36:09 GMT] [info] [<0.4188.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:36:09 GMT] [info] [<0.4189.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["32-b7b2be3edc2704b886bd40a003ba859b"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:09 GMT] [info] [<0.4190.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1186 201
+
+[Mon, 11 Apr 2011 08:36:09 GMT] [info] [<0.4196.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:36:09 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1104
+
+[Mon, 11 Apr 2011 08:36:13 GMT] [info] [<0.4197.0>] 127.0.0.1 - - 'PUT' /reg_a/a08559537748557697af11324c000961 201
+
+[Mon, 11 Apr 2011 08:36:13 GMT] [info] [<0.4203.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:36:13 GMT] [info] [<0.4204.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["33-c33942f6784a549835d60a771d397da6"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:15 GMT] [info] [<0.4205.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:36:15 GMT] [info] [<0.4210.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:36:15 GMT] [info] [<0.4211.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:36:15 GMT] [info] [<0.4212.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1170-070ea3b85640cb42d8051beae81fccfe"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:18 GMT] [info] [<0.4213.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1188 201
+
+[Mon, 11 Apr 2011 08:36:18 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1106
+
+[Mon, 11 Apr 2011 08:36:18 GMT] [info] [<0.4222.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:36:19 GMT] [info] [<0.4224.0>] 127.0.0.1 - - 'PUT' /reg_a/a08559537748557697af11324c000961 201
+
+[Mon, 11 Apr 2011 08:36:19 GMT] [info] [<0.4226.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:36:19 GMT] [info] [<0.4227.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:36:19 GMT] [info] [<0.4228.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["34-d2a64175d3ef8ef9920a2ab6e49a11c5"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:19 GMT] [info] [<0.4229.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:36:23 GMT] [info] [<0.4230.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:36:23 GMT] [info] [<0.4239.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["35-750282824758eed513164f3c23a6680d"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:36:24 GMT] [info] [<0.4240.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1190 201
+
+[Mon, 11 Apr 2011 08:36:24 GMT] [info] [<0.4242.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:36:24 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1108
+
+[Mon, 11 Apr 2011 08:41:13 GMT] [info] [<0.4246.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:41:13 GMT] [info] [<0.4539.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1171-0c1da61bc3965e44df11e6ca6c1e84c0"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:41:15 GMT] [info] [<0.4540.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["36-9b3551a0c3b23d57dd6dc8755c31ca84"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:41:18 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1110
+
+[Mon, 11 Apr 2011 08:41:19 GMT] [info] [<0.4545.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1192 201
+
+[Mon, 11 Apr 2011 08:41:19 GMT] [info] [<0.4553.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:41:19 GMT] [info] [<0.4554.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["37-bc289cba0a1e546424f917a32307092c"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:41:19 GMT] [info] [<0.4560.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["38-029b787d14edef8ea56ba5d0221d2eaa"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:41:20 GMT] [info] [<0.4561.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:41:20 GMT] [info] [<0.4562.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:41:20 GMT] [info] [<0.4563.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:41:20 GMT] [info] [<0.4564.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:41:20 GMT] [info] [<0.4565.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1172-03dcf82eeff1aab43fc579c03a0bf541"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:41:20 GMT] [info] [<0.4566.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:41:22 GMT] [info] [<0.4567.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:41:22 GMT] [info] [<0.4575.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1173-4a0bd5caca2b833eb5900590c82dad15"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:41:24 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1114
+
+[Mon, 11 Apr 2011 08:41:24 GMT] [info] [<0.4576.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1196 201
+
+[Mon, 11 Apr 2011 08:41:24 GMT] [info] [<0.4583.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:41:24 GMT] [info] [<0.4584.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:41:24 GMT] [info] [<0.4585.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:41:24 GMT] [info] [<0.4586.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1174-540286f1b2073fd96ae2326468596707"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:41:29 GMT] [info] [<0.4587.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1197 201
+
+[Mon, 11 Apr 2011 08:41:29 GMT] [info] [<0.4595.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:41:29 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1115
+
+[Mon, 11 Apr 2011 08:44:58 GMT] [info] [<0.4596.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:44:58 GMT] [info] [<0.4812.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1175-414c68d1c74506197fe341ad6e78ee4d"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:00 GMT] [info] [<0.4813.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:45:00 GMT] [info] [<0.4817.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["39-93268333c0c94851cfc9c3f19b843674"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:03 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1117
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4818.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1199 201
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4827.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4828.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4834.0>] 127.0.0.1 - - 'PUT' /reg_a/a08559537748557697af11324c000961 201
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4835.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4836.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4837.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["40-190687343ae428f9ecd3555f622abdd9"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4838.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["41-c86a05e02885d56fc1c313d4c492fe69"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:04 GMT] [info] [<0.4839.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["41-c7885ddac111c80d84df661650e154d2"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:09 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1120
+
+[Mon, 11 Apr 2011 08:45:09 GMT] [info] [<0.4840.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1202 201
+
+[Mon, 11 Apr 2011 08:45:09 GMT] [info] [<0.4852.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:45:37 GMT] [info] [<0.4853.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:45:37 GMT] [info] [<0.4884.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1176-cc94bffc2b63cfad01a98b9029387534"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:38 GMT] [info] [<0.4885.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["42-2b6f513431881e98a66c8816544a55c8"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:42 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1122
+
+[Mon, 11 Apr 2011 08:45:42 GMT] [info] [<0.4889.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1204 201
+
+[Mon, 11 Apr 2011 08:45:42 GMT] [info] [<0.4898.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 08:45:42 GMT] [info] [<0.4899.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["43-afc0eacb24b89b302d59d6c91e8180f6"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:42 GMT] [info] [<0.4904.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["44-86c6af2a1259992d3e5ba9a75d15a4af"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4905.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4907.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4908.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4909.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4910.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4912.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1177-fe69d21324b0958c03fe8ef70c6402ec"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4911.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4913.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 08:45:43 GMT] [info] [<0.4914.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1178-10c4492335eb3c5d978578894c8dd0d4"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 08:45:47 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1126
+
+[Mon, 11 Apr 2011 08:45:47 GMT] [info] [<0.4915.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1208 201
+
+[Mon, 11 Apr 2011 08:45:47 GMT] [info] [<0.4928.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 09:32:56 GMT] [info] [<0.4929.0>] 127.0.0.1 - - 'GET' /reg_a/_changes?feed=continuous&heartbeat=1000 200
+
+[Mon, 11 Apr 2011 09:32:56 GMT] [info] [<0.7759.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 09:32:56 GMT] [info] [<0.7762.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 09:33:36 GMT] [info] [<0.7763.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 09:33:36 GMT] [info] [<0.7806.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1179-9d12889b9cb787faa09539e28690a6b1"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 09:33:38 GMT] [info] [<0.7807.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["45-11d6269a37f536986d5232f3516f1a47"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 09:33:41 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1128
+
+[Mon, 11 Apr 2011 09:33:41 GMT] [info] [<0.7811.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1210 201
+
+[Mon, 11 Apr 2011 09:33:41 GMT] [info] [<0.7820.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+
+[Mon, 11 Apr 2011 09:33:42 GMT] [info] [<0.7821.0>] 172.16.1.194 - - 'GET' /reg_a/a08559537748557697af11324c000961?open_revs=["46-db375bfbc74f7de7107ace0e0a76ba4a"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 09:33:42 GMT] [info] [<0.7824.0>] 127.0.0.1 - - 'PUT' /reg_a/doc 201
+
+[Mon, 11 Apr 2011 09:33:42 GMT] [info] [<0.7826.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 09:33:42 GMT] [info] [<0.7827.0>] 127.0.0.1 - - 'GET' /reg_a/a08559537748557697af11324c000961 200
+
+[Mon, 11 Apr 2011 09:33:42 GMT] [info] [<0.7828.0>] 172.16.1.194 - - 'GET' /reg_a/doc?open_revs=["1180-06ecd8f1fa4e5827100af4f5aeb0faae"]&revs=true&latest=true&att_encoding_info=true 200
+
+[Mon, 11 Apr 2011 09:33:42 GMT] [info] [<0.7829.0>] 127.0.0.1 - - 'GET' /reg_a/doc 200
+
+[Mon, 11 Apr 2011 09:33:47 GMT] [info] [<0.316.0>] recording a checkpoint for http://172.16.1.194:5001/global_node/ -> reg_a at source update_seq 1130
+
+[Mon, 11 Apr 2011 09:33:47 GMT] [info] [<0.7830.0>] 172.16.1.194 - - 'POST' /reg_a/_ensure_full_commit?seq=1212 201
+
+[Mon, 11 Apr 2011 09:33:47 GMT] [info] [<0.7841.0>] 172.16.1.194 - - 'PUT' /reg_a/_local%2F49806353f8a8061abd52f2bf3fbaf4d5 201
+

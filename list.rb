@@ -13,27 +13,36 @@ DB = SERVER.database(node)
 def handle_notification(notification, db)
   result = JSON.parse(notification)
   #puts result
-  if (notification_type(notification) == "save/update") #XXX not good to get non-existing doc.
+  if (notification_type(notification) == "save/update") #XXX not good to get non-existing doc. Want to remove
     #puts "Here we go, getting the doc:"
     doc = get_doc(get_doc_id(result))
     #puts doc
-    job_arr = get_job_arr(doc) #Getting the key job, which, for now, is an array.
+    job_arr = get_job_arr(doc)
     step = get_step(doc)
-    #sleep(rand(5))
     if step < job_arr.length  
       job = get_job(job_arr, step)
-      if my_job?(job, db)      #CHANGE NAME DAMN IT, FROM DB TO NODE XXXX
+      if target_any?(job, db)      #CHANGE NAME DAMN IT, FROM DB TO NODE XXXX
         if !has_winner?(job)          # if no winner is selected
-          puts "I will try to claim#{db}"
+          puts "#{db} will try to claim #{job}"
           if !has_been_claimed?(job)  # and if no one has claimed it. XXX SAMMA RAD?
             set_claim(job, db)
             save_doc(doc)
+          else
+            coord_set_winner(job, db)
           end
         elsif is_winner?(job, db)
           system(job["do"])
           set_step(doc)
           save_doc(doc)
         end
+      elsif my_job?(job, db)
+        system(job["do"])
+        set_step(doc)
+        while next_is_mine?(job_arr, db, get_step(doc)) do
+          system(job["do"])
+          set_step(doc)
+        end
+        save_doc(doc)
       end
     end
   end
@@ -76,7 +85,20 @@ def affects_me?(doc, db)
 end
 
 def my_job?(job, db)
-  job["target"] == db || job["target"] == "any" #XXX Ugly, but to see if job is for just me
+  if job != nil
+    job["target"] == db #XXX Ugly, but to see if job is for just me
+  else
+    false
+  end
+end
+
+def next_is_mine?(job_arr, db, next_step)
+  next_job = get_job(job_arr, next_step)
+  my_job?(next_job, db)
+end
+
+def target_any?(job, db)
+  job["target"] == "any"
 end
 
 def has_winner?(job)
@@ -126,6 +148,10 @@ def get_step(doc)
   doc["step"]
 end
 
+def get_claim(job)
+  job("claimed_by")
+end
+
 #SETTERS
 
 def set_claim(job, node_id)
@@ -136,5 +162,11 @@ def set_step(doc)
   doc["step"] += 1
 end
 
+def coord_set_winner(job,db)
+  coordinator = "global_node"
+  if db == coordinator
+    job["winner"] = job["claimed_by"]
+  end
+end
 
 start_continuous_changes('127.0.0.1', port, node)

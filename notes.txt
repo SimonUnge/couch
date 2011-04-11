@@ -1,5 +1,7 @@
 LISTENER
 
+Plocka ut job-owner innan, istället för flera gånger?
+
 Ett doc kommer in till vanlig nod X (Ej supervisor):
 
 får X köra job[step]?
