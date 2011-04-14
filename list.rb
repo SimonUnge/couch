@@ -27,6 +27,7 @@ def handle_notification(notification, db)
         system(job["do"])
         set_step(doc)
         while next_is_mine?(job_arr, db, get_step(doc)) do
+          job = get_job(job_arr, get_step(doc))
           system(job["do"])
           set_step(doc)
         end
@@ -38,7 +39,7 @@ end
 
 def claim_or_work(job, db, doc)
   if !has_winner?(job)          # if no winner is selected
-    puts "#{db} will try to claim #{job}"
+    #puts "#{db} will try to claim #{job}"
     if !has_been_claimed?(job)  # and if no one has claimed it. XXX SAMMA RAD?
       set_claim(job, db)
       save_doc(doc)

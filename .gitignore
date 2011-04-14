@@ -1,5 +1,8 @@
+*.log
+*.output
+*.txt
 *.ini
 *.sh
-/couchdb1/
-/couchdb2/
-/couchdb3/
+couchdb1/
+couchdb2/
+couchdb3/
