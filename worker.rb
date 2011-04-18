@@ -1,5 +1,9 @@
 
+
 loop do
-  sleep 3
-  puts "ping from worker!"
+  # task = get_task #varifrån?
+  # do_task task
+  # report_result #hur?
 end
+
+haivaiJ8Shojes

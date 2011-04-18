@@ -1,3 +1,4 @@
+
 require 'rubygems'
 require 'daemons'
 
@@ -10,7 +11,7 @@ def worker()
 end
 
 def get_task
-  "ping -c 1 localhost"
+  gets.chop
 end
 
 def perform_task(task)
@@ -21,15 +22,11 @@ options = {:multiple => true, :monitor => true, :log_output => true}
 
 puts "before"
 
-Daemons.run('worker.rb',options)
+#Daemons.run('worker.rb',options)
 
-puts "Guess I wont get here"
-# while task1.running? && task2.running? do
-#   @num = @num - 1
-#   puts @num
-#   if @num == 0
-#     Daemons.group.stop_all(true)
-#   end
-#   task1.show_status
-#   task2.show_status
-# end
+task = Daemons.call(:multiple => true) do
+  loop do
+  end
+end
+
+puts "after"

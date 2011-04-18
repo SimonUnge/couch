@@ -1,11 +1,27 @@
 require 'rubygems'
 require 'couchrest'
-require 'net/http'
+#require 'net/http'
+require 'daemons'
 
-puts "Port # of host:"
-port = gets.chop
-puts "database name:"
-node = gets.chop
+#puts "Port # of host:"
+#port = gets.chop
+#puts "database name:"
+#node = gets.chop
+
+unless ARGV.length == 2
+  puts "Usage: ruby #{__FILE__} port# node_name"
+  exit
+end
+port = ARGV[0]
+node = ARGV[1]
+
+# def init_worker
+# end
+
+@workers = Array.new(3)
+# @workers.each do |w|
+#   w = Daemons.call({:multiple => true}) {}
+# end
 
 SERVER = CouchRest.new("127.0.0.1:" << port)
 DB = SERVER.database(node)
@@ -14,25 +30,29 @@ def handle_notification(notification, db)
   result = JSON.parse(notification)
   #puts result
   if (notification_type(notification) == "save/update") #XXX not good to get non-existing doc. Want to remove
-    #puts "Here we go, getting the doc:"
-    doc = get_doc(get_doc_id(result))
-    #puts doc
-    job_arr = get_job_arr(doc)
-    step = get_step(doc)
-    if step < job_arr.length  
-      job = get_job(job_arr, step)
-      if target_any?(job, db)      #CHANGE NAME DAMN IT, FROM DB TO NODE XXXX
-        claim_or_work(job, db, doc)
-      elsif my_job?(job, db)
+    work_manager(result, db)
+  end
+end
+
+def work_manager(result, db)
+  doc = get_doc(get_doc_id(result))
+  job_arr = get_job_arr(doc)
+  step = get_step(doc)
+  if step < job_arr.length
+    job = get_job(job_arr, step)
+    if target_any?(job, db)      #CHANGE NAME DAMN IT, FROM DB TO NODE XXXX
+      claim_or_work(job, db, doc)
+    elsif my_job?(job, db)
+      work = Daemons.call({:multiple => true}) {system(job["do"])}
+      while work.running?
+      end
+      set_step(doc)
+      while next_is_mine?(job_arr, db, get_step(doc)) do
+        job = get_job(job_arr, get_step(doc))
         system(job["do"])
         set_step(doc)
-        while next_is_mine?(job_arr, db, get_step(doc)) do
-          job = get_job(job_arr, get_step(doc))
-          system(job["do"])
-          set_step(doc)
-        end
-        save_doc(doc)
       end
+      save_doc(doc)
     end
   end
 end
